@@ -1,0 +1,1504 @@
+grf {
+	grfid: "yz\02\00";		//797A0200
+	name: string(STR_GRF_NAME);
+	desc: string(STR_GRF_DESCRIPTION);
+	version: 0;
+	min_compatible_version: 0;
+	url: string(STR_GRF_URL);
+	param {
+		param_only_se {
+			type:    	bool;
+			name:    	string(STR_ONLY_SE);
+			desc:    	string(STR_ONLY_SE_DESC);
+			def_value:	0;
+		}
+	}
+	param {
+		param_irremovable {
+			type:    	bool;
+			name:    	string(STR_IRREMOVABLE);
+			desc:    	string(STR_IRREMOVABLE_DESC);
+			def_value:	0;
+		}
+	}
+	param {
+		param_build_cost {
+			type:    	int;
+			name:    	string(STR_BUILD_COST);
+			desc:    	string(STR_BUILD_COST_DESC);
+			def_value:	3;
+		}
+	}
+	param {
+		param_remove_cost {
+			type:    	int;
+			name:    	string(STR_REMOVE_COST);
+			desc:    	string(STR_REMOVE_COST_DESC);
+			def_value:	3;
+		}
+	}
+}
+// templates
+template template_flag (filename){		//universal flag template
+	[2, 2, 64, 81, -31, -50, filename+".png"]
+}
+// OBJECTS
+// semi-automatically generated code:
+// flag_ar
+spriteset (ss_flag_ar) {
+	template_flag("gfx/flag_ar")
+}
+spritelayout sl_flag_ar {
+	ground {
+		sprite: GROUNDSPRITE_CONCRETE;
+	}
+	building {
+		sprite: ss_flag_ar;
+		zextent: 35;
+		}
+}
+item (FEAT_OBJECTS, flag_ar, 000) {
+	property {
+		class:					"WFLG";
+classname:				string(STR_WORLD_FLAGS);
+		name:					string(STR_FLAG_AR);
+		climates_available:		ALL_CLIMATES;
+		size:					[1,1];
+		build_cost_multiplier:	param_build_cost;
+		remove_cost_multiplier:	param_remove_cost;
+		introduction_date:		0;
+		end_of_life_date:		0xFFFFFFFF;
+		object_flags:			(param_only_se>0 && param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE,OBJ_FLAG_ONLY_SE) : ((param_only_se>0) ? bitmask(OBJ_FLAG_ONLY_SE) : ((param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE) : 0));
+		height:					17;
+		num_views:				1;
+	}
+	graphics {
+		default:				sl_flag_ar;
+	}
+}
+// flag_at
+spriteset (ss_flag_at) {
+	template_flag("gfx/flag_at")
+}
+spritelayout sl_flag_at {
+	ground {
+		sprite: GROUNDSPRITE_CONCRETE;
+	}
+	building {
+		sprite: ss_flag_at;
+		zextent: 35;
+		}
+}
+item (FEAT_OBJECTS, flag_at, 001) {
+	property {
+		class:					"WFLG";
+		name:					string(STR_FLAG_AT);
+		climates_available:		ALL_CLIMATES;
+		size:					[1,1];
+		build_cost_multiplier:	param_build_cost;
+		remove_cost_multiplier:	param_remove_cost;
+		introduction_date:		0;
+		end_of_life_date:		0xFFFFFFFF;
+		object_flags:			(param_only_se>0 && param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE,OBJ_FLAG_ONLY_SE) : ((param_only_se>0) ? bitmask(OBJ_FLAG_ONLY_SE) : ((param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE) : 0));
+		height:					17;
+		num_views:				1;
+	}
+	graphics {
+		default:				sl_flag_at;
+	}
+}
+// flag_au
+spriteset (ss_flag_au) {
+	template_flag("gfx/flag_au")
+}
+spritelayout sl_flag_au {
+	ground {
+		sprite: GROUNDSPRITE_CONCRETE;
+	}
+	building {
+		sprite: ss_flag_au;
+		zextent: 35;
+		}
+}
+item (FEAT_OBJECTS, flag_au, 002) {
+	property {
+		class:					"WFLG";
+		name:					string(STR_FLAG_AU);
+		climates_available:		ALL_CLIMATES;
+		size:					[1,1];
+		build_cost_multiplier:	param_build_cost;
+		remove_cost_multiplier:	param_remove_cost;
+		introduction_date:		0;
+		end_of_life_date:		0xFFFFFFFF;
+		object_flags:			(param_only_se>0 && param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE,OBJ_FLAG_ONLY_SE) : ((param_only_se>0) ? bitmask(OBJ_FLAG_ONLY_SE) : ((param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE) : 0));
+		height:					17;
+		num_views:				1;
+	}
+	graphics {
+		default:				sl_flag_au;
+	}
+}
+// flag_be
+spriteset (ss_flag_be) {
+	template_flag("gfx/flag_be")
+}
+spritelayout sl_flag_be {
+	ground {
+		sprite: GROUNDSPRITE_CONCRETE;
+	}
+	building {
+		sprite: ss_flag_be;
+		zextent: 35;
+		}
+}
+item (FEAT_OBJECTS, flag_be, 003) {
+	property {
+		class:					"WFLG";
+		name:					string(STR_FLAG_BE);
+		climates_available:		ALL_CLIMATES;
+		size:					[1,1];
+		build_cost_multiplier:	param_build_cost;
+		remove_cost_multiplier:	param_remove_cost;
+		introduction_date:		0;
+		end_of_life_date:		0xFFFFFFFF;
+		object_flags:			(param_only_se>0 && param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE,OBJ_FLAG_ONLY_SE) : ((param_only_se>0) ? bitmask(OBJ_FLAG_ONLY_SE) : ((param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE) : 0));
+		height:					17;
+		num_views:				1;
+	}
+	graphics {
+		default:				sl_flag_be;
+	}
+}
+// flag_bg
+spriteset (ss_flag_bg) {
+	template_flag("gfx/flag_bg")
+}
+spritelayout sl_flag_bg {
+	ground {
+		sprite: GROUNDSPRITE_CONCRETE;
+	}
+	building {
+		sprite: ss_flag_bg;
+		zextent: 35;
+		}
+}
+item (FEAT_OBJECTS, flag_bg, 004) {
+	property {
+		class:					"WFLG";
+		name:					string(STR_FLAG_BG);
+		climates_available:		ALL_CLIMATES;
+		size:					[1,1];
+		build_cost_multiplier:	param_build_cost;
+		remove_cost_multiplier:	param_remove_cost;
+		introduction_date:		0;
+		end_of_life_date:		0xFFFFFFFF;
+		object_flags:			(param_only_se>0 && param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE,OBJ_FLAG_ONLY_SE) : ((param_only_se>0) ? bitmask(OBJ_FLAG_ONLY_SE) : ((param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE) : 0));
+		height:					17;
+		num_views:				1;
+	}
+	graphics {
+		default:				sl_flag_bg;
+	}
+}
+// flag_br
+spriteset (ss_flag_br) {
+	template_flag("gfx/flag_br")
+}
+spritelayout sl_flag_br {
+	ground {
+		sprite: GROUNDSPRITE_CONCRETE;
+	}
+	building {
+		sprite: ss_flag_br;
+		zextent: 35;
+		}
+}
+item (FEAT_OBJECTS, flag_br, 005) {
+	property {
+		class:					"WFLG";
+		name:					string(STR_FLAG_BR);
+		climates_available:		ALL_CLIMATES;
+		size:					[1,1];
+		build_cost_multiplier:	param_build_cost;
+		remove_cost_multiplier:	param_remove_cost;
+		introduction_date:		0;
+		end_of_life_date:		0xFFFFFFFF;
+		object_flags:			(param_only_se>0 && param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE,OBJ_FLAG_ONLY_SE) : ((param_only_se>0) ? bitmask(OBJ_FLAG_ONLY_SE) : ((param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE) : 0));
+		height:					17;
+		num_views:				1;
+	}
+	graphics {
+		default:				sl_flag_br;
+	}
+}
+// flag_ca
+spriteset (ss_flag_ca) {
+	template_flag("gfx/flag_ca")
+}
+spritelayout sl_flag_ca {
+	ground {
+		sprite: GROUNDSPRITE_CONCRETE;
+	}
+	building {
+		sprite: ss_flag_ca;
+		zextent: 35;
+		}
+}
+item (FEAT_OBJECTS, flag_ca, 006) {
+	property {
+		class:					"WFLG";
+		name:					string(STR_FLAG_CA);
+		climates_available:		ALL_CLIMATES;
+		size:					[1,1];
+		build_cost_multiplier:	param_build_cost;
+		remove_cost_multiplier:	param_remove_cost;
+		introduction_date:		0;
+		end_of_life_date:		0xFFFFFFFF;
+		object_flags:			(param_only_se>0 && param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE,OBJ_FLAG_ONLY_SE) : ((param_only_se>0) ? bitmask(OBJ_FLAG_ONLY_SE) : ((param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE) : 0));
+		height:					17;
+		num_views:				1;
+	}
+	graphics {
+		default:				sl_flag_ca;
+	}
+}
+// flag_ch
+spriteset (ss_flag_ch) {
+	template_flag("gfx/flag_ch")
+}
+spritelayout sl_flag_ch {
+	ground {
+		sprite: GROUNDSPRITE_CONCRETE;
+	}
+	building {
+		sprite: ss_flag_ch;
+		zextent: 35;
+		}
+}
+item (FEAT_OBJECTS, flag_ch, 007) {
+	property {
+		class:					"WFLG";
+		name:					string(STR_FLAG_CH);
+		climates_available:		ALL_CLIMATES;
+		size:					[1,1];
+		build_cost_multiplier:	param_build_cost;
+		remove_cost_multiplier:	param_remove_cost;
+		introduction_date:		0;
+		end_of_life_date:		0xFFFFFFFF;
+		object_flags:			(param_only_se>0 && param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE,OBJ_FLAG_ONLY_SE) : ((param_only_se>0) ? bitmask(OBJ_FLAG_ONLY_SE) : ((param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE) : 0));
+		height:					17;
+		num_views:				1;
+	}
+	graphics {
+		default:				sl_flag_ch;
+	}
+}
+// flag_cl
+spriteset (ss_flag_cl) {
+	template_flag("gfx/flag_cl")
+}
+spritelayout sl_flag_cl {
+	ground {
+		sprite: GROUNDSPRITE_CONCRETE;
+	}
+	building {
+		sprite: ss_flag_cl;
+		zextent: 35;
+		}
+}
+item (FEAT_OBJECTS, flag_cl, 008) {
+	property {
+		class:					"WFLG";
+		name:					string(STR_FLAG_CL);
+		climates_available:		ALL_CLIMATES;
+		size:					[1,1];
+		build_cost_multiplier:	param_build_cost;
+		remove_cost_multiplier:	param_remove_cost;
+		introduction_date:		0;
+		end_of_life_date:		0xFFFFFFFF;
+		object_flags:			(param_only_se>0 && param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE,OBJ_FLAG_ONLY_SE) : ((param_only_se>0) ? bitmask(OBJ_FLAG_ONLY_SE) : ((param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE) : 0));
+		height:					17;
+		num_views:				1;
+	}
+	graphics {
+		default:				sl_flag_cl;
+	}
+}
+// flag_cn
+spriteset (ss_flag_cn) {
+	template_flag("gfx/flag_cn")
+}
+spritelayout sl_flag_cn {
+	ground {
+		sprite: GROUNDSPRITE_CONCRETE;
+	}
+	building {
+		sprite: ss_flag_cn;
+		zextent: 35;
+		}
+}
+item (FEAT_OBJECTS, flag_cn, 09) {
+	property {
+		class:					"WFLG";
+		name:					string(STR_FLAG_CN);
+		climates_available:		ALL_CLIMATES;
+		size:					[1,1];
+		build_cost_multiplier:	param_build_cost;
+		remove_cost_multiplier:	param_remove_cost;
+		introduction_date:		0;
+		end_of_life_date:		0xFFFFFFFF;
+		object_flags:			(param_only_se>0 && param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE,OBJ_FLAG_ONLY_SE) : ((param_only_se>0) ? bitmask(OBJ_FLAG_ONLY_SE) : ((param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE) : 0));
+		height:					17;
+		num_views:				1;
+	}
+	graphics {
+		default:				sl_flag_cn;
+	}
+}
+// flag_cz
+spriteset (ss_flag_cz) {
+	template_flag("gfx/flag_cz")
+}
+spritelayout sl_flag_cz {
+	ground {
+		sprite: GROUNDSPRITE_CONCRETE;
+	}
+	building {
+		sprite: ss_flag_cz;
+		zextent: 35;
+		}
+}
+item (FEAT_OBJECTS, flag_cz, 010) {
+	property {
+		class:					"WFLG";
+		name:					string(STR_FLAG_CZ);
+		climates_available:		ALL_CLIMATES;
+		size:					[1,1];
+		build_cost_multiplier:	param_build_cost;
+		remove_cost_multiplier:	param_remove_cost;
+		introduction_date:		0;
+		end_of_life_date:		0xFFFFFFFF;
+		object_flags:			(param_only_se>0 && param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE,OBJ_FLAG_ONLY_SE) : ((param_only_se>0) ? bitmask(OBJ_FLAG_ONLY_SE) : ((param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE) : 0));
+		height:					17;
+		num_views:				1;
+	}
+	graphics {
+		default:				sl_flag_cz;
+	}
+}
+// flag_de
+spriteset (ss_flag_de) {
+	template_flag("gfx/flag_de")
+}
+spritelayout sl_flag_de {
+	ground {
+		sprite: GROUNDSPRITE_CONCRETE;
+	}
+	building {
+		sprite: ss_flag_de;
+		zextent: 35;
+		}
+}
+item (FEAT_OBJECTS, flag_de, 011) {
+	property {
+		class:					"WFLG";
+		name:					string(STR_FLAG_DE);
+		climates_available:		ALL_CLIMATES;
+		size:					[1,1];
+		build_cost_multiplier:	param_build_cost;
+		remove_cost_multiplier:	param_remove_cost;
+		introduction_date:		0;
+		end_of_life_date:		0xFFFFFFFF;
+		object_flags:			(param_only_se>0 && param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE,OBJ_FLAG_ONLY_SE) : ((param_only_se>0) ? bitmask(OBJ_FLAG_ONLY_SE) : ((param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE) : 0));
+		height:					17;
+		num_views:				1;
+	}
+	graphics {
+		default:				sl_flag_de;
+	}
+}
+// flag_dk
+spriteset (ss_flag_dk) {
+	template_flag("gfx/flag_dk")
+}
+spritelayout sl_flag_dk {
+	ground {
+		sprite: GROUNDSPRITE_CONCRETE;
+	}
+	building {
+		sprite: ss_flag_dk;
+		zextent: 35;
+		}
+}
+item (FEAT_OBJECTS, flag_dk, 012) {
+	property {
+		class:					"WFLG";
+		name:					string(STR_FLAG_DK);
+		climates_available:		ALL_CLIMATES;
+		size:					[1,1];
+		build_cost_multiplier:	param_build_cost;
+		remove_cost_multiplier:	param_remove_cost;
+		introduction_date:		0;
+		end_of_life_date:		0xFFFFFFFF;
+		object_flags:			(param_only_se>0 && param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE,OBJ_FLAG_ONLY_SE) : ((param_only_se>0) ? bitmask(OBJ_FLAG_ONLY_SE) : ((param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE) : 0));
+		height:					17;
+		num_views:				1;
+	}
+	graphics {
+		default:				sl_flag_dk;
+	}
+}
+// flag_ee
+spriteset (ss_flag_ee) {
+	template_flag("gfx/flag_ee")
+}
+spritelayout sl_flag_ee {
+	ground {
+		sprite: GROUNDSPRITE_CONCRETE;
+	}
+	building {
+		sprite: ss_flag_ee;
+		zextent: 35;
+		}
+}
+item (FEAT_OBJECTS, flag_ee, 013) {
+	property {
+		class:					"WFLG";
+		name:					string(STR_FLAG_EE);
+		climates_available:		ALL_CLIMATES;
+		size:					[1,1];
+		build_cost_multiplier:	param_build_cost;
+		remove_cost_multiplier:	param_remove_cost;
+		introduction_date:		0;
+		end_of_life_date:		0xFFFFFFFF;
+		object_flags:			(param_only_se>0 && param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE,OBJ_FLAG_ONLY_SE) : ((param_only_se>0) ? bitmask(OBJ_FLAG_ONLY_SE) : ((param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE) : 0));
+		height:					17;
+		num_views:				1;
+	}
+	graphics {
+		default:				sl_flag_ee;
+	}
+}
+// flag_eg
+spriteset (ss_flag_eg) {
+	template_flag("gfx/flag_eg")
+}
+spritelayout sl_flag_eg {
+	ground {
+		sprite: GROUNDSPRITE_CONCRETE;
+	}
+	building {
+		sprite: ss_flag_eg;
+		zextent: 35;
+		}
+}
+item (FEAT_OBJECTS, flag_eg, 014) {
+	property {
+		class:					"WFLG";
+		name:					string(STR_FLAG_EG);
+		climates_available:		ALL_CLIMATES;
+		size:					[1,1];
+		build_cost_multiplier:	param_build_cost;
+		remove_cost_multiplier:	param_remove_cost;
+		introduction_date:		0;
+		end_of_life_date:		0xFFFFFFFF;
+		object_flags:			(param_only_se>0 && param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE,OBJ_FLAG_ONLY_SE) : ((param_only_se>0) ? bitmask(OBJ_FLAG_ONLY_SE) : ((param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE) : 0));
+		height:					17;
+		num_views:				1;
+	}
+	graphics {
+		default:				sl_flag_eg;
+	}
+}
+// flag_es
+spriteset (ss_flag_es) {
+	template_flag("gfx/flag_es")
+}
+spritelayout sl_flag_es {
+	ground {
+		sprite: GROUNDSPRITE_CONCRETE;
+	}
+	building {
+		sprite: ss_flag_es;
+		zextent: 35;
+		}
+}
+item (FEAT_OBJECTS, flag_es, 015) {
+	property {
+		class:					"WFLG";
+		name:					string(STR_FLAG_ES);
+		climates_available:		ALL_CLIMATES;
+		size:					[1,1];
+		build_cost_multiplier:	param_build_cost;
+		remove_cost_multiplier:	param_remove_cost;
+		introduction_date:		0;
+		end_of_life_date:		0xFFFFFFFF;
+		object_flags:			(param_only_se>0 && param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE,OBJ_FLAG_ONLY_SE) : ((param_only_se>0) ? bitmask(OBJ_FLAG_ONLY_SE) : ((param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE) : 0));
+		height:					17;
+		num_views:				1;
+	}
+	graphics {
+		default:				sl_flag_es;
+	}
+}
+// flag_fi
+spriteset (ss_flag_fi) {
+	template_flag("gfx/flag_fi")
+}
+spritelayout sl_flag_fi {
+	ground {
+		sprite: GROUNDSPRITE_CONCRETE;
+	}
+	building {
+		sprite: ss_flag_fi;
+		zextent: 35;
+		}
+}
+item (FEAT_OBJECTS, flag_fi, 016) {
+	property {
+		class:					"WFLG";
+		name:					string(STR_FLAG_FI);
+		climates_available:		ALL_CLIMATES;
+		size:					[1,1];
+		build_cost_multiplier:	param_build_cost;
+		remove_cost_multiplier:	param_remove_cost;
+		introduction_date:		0;
+		end_of_life_date:		0xFFFFFFFF;
+		object_flags:			(param_only_se>0 && param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE,OBJ_FLAG_ONLY_SE) : ((param_only_se>0) ? bitmask(OBJ_FLAG_ONLY_SE) : ((param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE) : 0));
+		height:					17;
+		num_views:				1;
+	}
+	graphics {
+		default:				sl_flag_fi;
+	}
+}
+// flag_fr
+spriteset (ss_flag_fr) {
+	template_flag("gfx/flag_fr")
+}
+spritelayout sl_flag_fr {
+	ground {
+		sprite: GROUNDSPRITE_CONCRETE;
+	}
+	building {
+		sprite: ss_flag_fr;
+		zextent: 35;
+		}
+}
+item (FEAT_OBJECTS, flag_fr, 017) {
+	property {
+		class:					"WFLG";
+		name:					string(STR_FLAG_FR);
+		climates_available:		ALL_CLIMATES;
+		size:					[1,1];
+		build_cost_multiplier:	param_build_cost;
+		remove_cost_multiplier:	param_remove_cost;
+		introduction_date:		0;
+		end_of_life_date:		0xFFFFFFFF;
+		object_flags:			(param_only_se>0 && param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE,OBJ_FLAG_ONLY_SE) : ((param_only_se>0) ? bitmask(OBJ_FLAG_ONLY_SE) : ((param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE) : 0));
+		height:					17;
+		num_views:				1;
+	}
+	graphics {
+		default:				sl_flag_fr;
+	}
+}
+// flag_gb
+spriteset (ss_flag_gb) {
+	template_flag("gfx/flag_gb")
+}
+spritelayout sl_flag_gb {
+	ground {
+		sprite: GROUNDSPRITE_CONCRETE;
+	}
+	building {
+		sprite: ss_flag_gb;
+		zextent: 35;
+		}
+}
+item (FEAT_OBJECTS, flag_gb, 018) {
+	property {
+		class:					"WFLG";
+		name:					string(STR_FLAG_GB);
+		climates_available:		ALL_CLIMATES;
+		size:					[1,1];
+		build_cost_multiplier:	param_build_cost;
+		remove_cost_multiplier:	param_remove_cost;
+		introduction_date:		0;
+		end_of_life_date:		0xFFFFFFFF;
+		object_flags:			(param_only_se>0 && param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE,OBJ_FLAG_ONLY_SE) : ((param_only_se>0) ? bitmask(OBJ_FLAG_ONLY_SE) : ((param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE) : 0));
+		height:					17;
+		num_views:				1;
+	}
+	graphics {
+		default:				sl_flag_gb;
+	}
+}
+// flag_hr
+spriteset (ss_flag_hr) {
+	template_flag("gfx/flag_hr")
+}
+spritelayout sl_flag_hr {
+	ground {
+		sprite: GROUNDSPRITE_CONCRETE;
+	}
+	building {
+		sprite: ss_flag_hr;
+		zextent: 35;
+		}
+}
+item (FEAT_OBJECTS, flag_hr, 019) {
+	property {
+		class:					"WFLG";
+		name:					string(STR_FLAG_HR);
+		climates_available:		ALL_CLIMATES;
+		size:					[1,1];
+		build_cost_multiplier:	param_build_cost;
+		remove_cost_multiplier:	param_remove_cost;
+		introduction_date:		0;
+		end_of_life_date:		0xFFFFFFFF;
+		object_flags:			(param_only_se>0 && param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE,OBJ_FLAG_ONLY_SE) : ((param_only_se>0) ? bitmask(OBJ_FLAG_ONLY_SE) : ((param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE) : 0));
+		height:					17;
+		num_views:				1;
+	}
+	graphics {
+		default:				sl_flag_hr;
+	}
+}
+// flag_hu
+spriteset (ss_flag_hu) {
+	template_flag("gfx/flag_hu")
+}
+spritelayout sl_flag_hu {
+	ground {
+		sprite: GROUNDSPRITE_CONCRETE;
+	}
+	building {
+		sprite: ss_flag_hu;
+		zextent: 35;
+		}
+}
+item (FEAT_OBJECTS, flag_hu, 020) {
+	property {
+		class:					"WFLG";
+		name:					string(STR_FLAG_HU);
+		climates_available:		ALL_CLIMATES;
+		size:					[1,1];
+		build_cost_multiplier:	param_build_cost;
+		remove_cost_multiplier:	param_remove_cost;
+		introduction_date:		0;
+		end_of_life_date:		0xFFFFFFFF;
+		object_flags:			(param_only_se>0 && param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE,OBJ_FLAG_ONLY_SE) : ((param_only_se>0) ? bitmask(OBJ_FLAG_ONLY_SE) : ((param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE) : 0));
+		height:					17;
+		num_views:				1;
+	}
+	graphics {
+		default:				sl_flag_hu;
+	}
+}
+// flag_id
+spriteset (ss_flag_id) {
+	template_flag("gfx/flag_id")
+}
+spritelayout sl_flag_id {
+	ground {
+		sprite: GROUNDSPRITE_CONCRETE;
+	}
+	building {
+		sprite: ss_flag_id;
+		zextent: 35;
+		}
+}
+item (FEAT_OBJECTS, flag_id, 021) {
+	property {
+		class:					"WFLG";
+		name:					string(STR_FLAG_ID);
+		climates_available:		ALL_CLIMATES;
+		size:					[1,1];
+		build_cost_multiplier:	param_build_cost;
+		remove_cost_multiplier:	param_remove_cost;
+		introduction_date:		0;
+		end_of_life_date:		0xFFFFFFFF;
+		object_flags:			(param_only_se>0 && param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE,OBJ_FLAG_ONLY_SE) : ((param_only_se>0) ? bitmask(OBJ_FLAG_ONLY_SE) : ((param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE) : 0));
+		height:					17;
+		num_views:				1;
+	}
+	graphics {
+		default:				sl_flag_id;
+	}
+}
+// flag_ie
+spriteset (ss_flag_ie) {
+	template_flag("gfx/flag_ie")
+}
+spritelayout sl_flag_ie {
+	ground {
+		sprite: GROUNDSPRITE_CONCRETE;
+	}
+	building {
+		sprite: ss_flag_ie;
+		zextent: 35;
+		}
+}
+item (FEAT_OBJECTS, flag_ie, 022) {
+	property {
+		class:					"WFLG";
+		name:					string(STR_FLAG_IE);
+		climates_available:		ALL_CLIMATES;
+		size:					[1,1];
+		build_cost_multiplier:	param_build_cost;
+		remove_cost_multiplier:	param_remove_cost;
+		introduction_date:		0;
+		end_of_life_date:		0xFFFFFFFF;
+		object_flags:			(param_only_se>0 && param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE,OBJ_FLAG_ONLY_SE) : ((param_only_se>0) ? bitmask(OBJ_FLAG_ONLY_SE) : ((param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE) : 0));
+		height:					17;
+		num_views:				1;
+	}
+	graphics {
+		default:				sl_flag_ie;
+	}
+}
+// flag_is
+spriteset (ss_flag_is) {
+	template_flag("gfx/flag_is")
+}
+spritelayout sl_flag_is {
+	ground {
+		sprite: GROUNDSPRITE_CONCRETE;
+	}
+	building {
+		sprite: ss_flag_is;
+		zextent: 35;
+		}
+}
+item (FEAT_OBJECTS, flag_is, 023) {
+	property {
+		class:					"WFLG";
+		name:					string(STR_FLAG_IS);
+		climates_available:		ALL_CLIMATES;
+		size:					[1,1];
+		build_cost_multiplier:	param_build_cost;
+		remove_cost_multiplier:	param_remove_cost;
+		introduction_date:		0;
+		end_of_life_date:		0xFFFFFFFF;
+		object_flags:			(param_only_se>0 && param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE,OBJ_FLAG_ONLY_SE) : ((param_only_se>0) ? bitmask(OBJ_FLAG_ONLY_SE) : ((param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE) : 0));
+		height:					17;
+		num_views:				1;
+	}
+	graphics {
+		default:				sl_flag_is;
+	}
+}
+// flag_it
+spriteset (ss_flag_it) {
+	template_flag("gfx/flag_it")
+}
+spritelayout sl_flag_it {
+	ground {
+		sprite: GROUNDSPRITE_CONCRETE;
+	}
+	building {
+		sprite: ss_flag_it;
+		zextent: 35;
+		}
+}
+item (FEAT_OBJECTS, flag_it, 024) {
+	property {
+		class:					"WFLG";
+		name:					string(STR_FLAG_IT);
+		climates_available:		ALL_CLIMATES;
+		size:					[1,1];
+		build_cost_multiplier:	param_build_cost;
+		remove_cost_multiplier:	param_remove_cost;
+		introduction_date:		0;
+		end_of_life_date:		0xFFFFFFFF;
+		object_flags:			(param_only_se>0 && param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE,OBJ_FLAG_ONLY_SE) : ((param_only_se>0) ? bitmask(OBJ_FLAG_ONLY_SE) : ((param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE) : 0));
+		height:					17;
+		num_views:				1;
+	}
+	graphics {
+		default:				sl_flag_it;
+	}
+}
+// flag_jm
+spriteset (ss_flag_jm) {
+	template_flag("gfx/flag_jm")
+}
+spritelayout sl_flag_jm {
+	ground {
+		sprite: GROUNDSPRITE_CONCRETE;
+	}
+	building {
+		sprite: ss_flag_jm;
+		zextent: 35;
+		}
+}
+item (FEAT_OBJECTS, flag_jm, 025) {
+	property {
+		class:					"WFLG";
+		name:					string(STR_FLAG_JM);
+		climates_available:		ALL_CLIMATES;
+		size:					[1,1];
+		build_cost_multiplier:	param_build_cost;
+		remove_cost_multiplier:	param_remove_cost;
+		introduction_date:		0;
+		end_of_life_date:		0xFFFFFFFF;
+		object_flags:			(param_only_se>0 && param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE,OBJ_FLAG_ONLY_SE) : ((param_only_se>0) ? bitmask(OBJ_FLAG_ONLY_SE) : ((param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE) : 0));
+		height:					17;
+		num_views:				1;
+	}
+	graphics {
+		default:				sl_flag_jm;
+	}
+}
+// flag_jp
+spriteset (ss_flag_jp) {
+	template_flag("gfx/flag_jp")
+}
+spritelayout sl_flag_jp {
+	ground {
+		sprite: GROUNDSPRITE_CONCRETE;
+	}
+	building {
+		sprite: ss_flag_jp;
+		zextent: 35;
+		}
+}
+item (FEAT_OBJECTS, flag_jp, 026) {
+	property {
+		class:					"WFLG";
+		name:					string(STR_FLAG_JP);
+		climates_available:		ALL_CLIMATES;
+		size:					[1,1];
+		build_cost_multiplier:	param_build_cost;
+		remove_cost_multiplier:	param_remove_cost;
+		introduction_date:		0;
+		end_of_life_date:		0xFFFFFFFF;
+		object_flags:			(param_only_se>0 && param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE,OBJ_FLAG_ONLY_SE) : ((param_only_se>0) ? bitmask(OBJ_FLAG_ONLY_SE) : ((param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE) : 0));
+		height:					17;
+		num_views:				1;
+	}
+	graphics {
+		default:				sl_flag_jp;
+	}
+}
+// flag_kr
+spriteset (ss_flag_kr) {
+	template_flag("gfx/flag_kr")
+}
+spritelayout sl_flag_kr {
+	ground {
+		sprite: GROUNDSPRITE_CONCRETE;
+	}
+	building {
+		sprite: ss_flag_kr;
+		zextent: 35;
+		}
+}
+item (FEAT_OBJECTS, flag_kr, 027) {
+	property {
+		class:					"WFLG";
+		name:					string(STR_FLAG_KR);
+		climates_available:		ALL_CLIMATES;
+		size:					[1,1];
+		build_cost_multiplier:	param_build_cost;
+		remove_cost_multiplier:	param_remove_cost;
+		introduction_date:		0;
+		end_of_life_date:		0xFFFFFFFF;
+		object_flags:			(param_only_se>0 && param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE,OBJ_FLAG_ONLY_SE) : ((param_only_se>0) ? bitmask(OBJ_FLAG_ONLY_SE) : ((param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE) : 0));
+		height:					17;
+		num_views:				1;
+	}
+	graphics {
+		default:				sl_flag_kr;
+	}
+}
+// flag_lt
+spriteset (ss_flag_lt) {
+	template_flag("gfx/flag_lt")
+}
+spritelayout sl_flag_lt {
+	ground {
+		sprite: GROUNDSPRITE_CONCRETE;
+	}
+	building {
+		sprite: ss_flag_lt;
+		zextent: 35;
+		}
+}
+item (FEAT_OBJECTS, flag_lt, 028) {
+	property {
+		class:					"WFLG";
+		name:					string(STR_FLAG_LT);
+		climates_available:		ALL_CLIMATES;
+		size:					[1,1];
+		build_cost_multiplier:	param_build_cost;
+		remove_cost_multiplier:	param_remove_cost;
+		introduction_date:		0;
+		end_of_life_date:		0xFFFFFFFF;
+		object_flags:			(param_only_se>0 && param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE,OBJ_FLAG_ONLY_SE) : ((param_only_se>0) ? bitmask(OBJ_FLAG_ONLY_SE) : ((param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE) : 0));
+		height:					17;
+		num_views:				1;
+	}
+	graphics {
+		default:				sl_flag_lt;
+	}
+}
+// flag_lu
+spriteset (ss_flag_lu) {
+	template_flag("gfx/flag_lu")
+}
+spritelayout sl_flag_lu {
+	ground {
+		sprite: GROUNDSPRITE_CONCRETE;
+	}
+	building {
+		sprite: ss_flag_lu;
+		zextent: 35;
+		}
+}
+item (FEAT_OBJECTS, flag_lu, 029) {
+	property {
+		class:					"WFLG";
+		name:					string(STR_FLAG_LU);
+		climates_available:		ALL_CLIMATES;
+		size:					[1,1];
+		build_cost_multiplier:	param_build_cost;
+		remove_cost_multiplier:	param_remove_cost;
+		introduction_date:		0;
+		end_of_life_date:		0xFFFFFFFF;
+		object_flags:			(param_only_se>0 && param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE,OBJ_FLAG_ONLY_SE) : ((param_only_se>0) ? bitmask(OBJ_FLAG_ONLY_SE) : ((param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE) : 0));
+		height:					17;
+		num_views:				1;
+	}
+	graphics {
+		default:				sl_flag_lu;
+	}
+}
+// flag_lv
+spriteset (ss_flag_lv) {
+	template_flag("gfx/flag_lv")
+}
+spritelayout sl_flag_lv {
+	ground {
+		sprite: GROUNDSPRITE_CONCRETE;
+	}
+	building {
+		sprite: ss_flag_lv;
+		zextent: 35;
+		}
+}
+item (FEAT_OBJECTS, flag_lv, 030) {
+	property {
+		class:					"WFLG";
+		name:					string(STR_FLAG_LV);
+		climates_available:		ALL_CLIMATES;
+		size:					[1,1];
+		build_cost_multiplier:	param_build_cost;
+		remove_cost_multiplier:	param_remove_cost;
+		introduction_date:		0;
+		end_of_life_date:		0xFFFFFFFF;
+		object_flags:			(param_only_se>0 && param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE,OBJ_FLAG_ONLY_SE) : ((param_only_se>0) ? bitmask(OBJ_FLAG_ONLY_SE) : ((param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE) : 0));
+		height:					17;
+		num_views:				1;
+	}
+	graphics {
+		default:				sl_flag_lv;
+	}
+}
+// flag_mc
+spriteset (ss_flag_mc) {
+	template_flag("gfx/flag_mc")
+}
+spritelayout sl_flag_mc {
+	ground {
+		sprite: GROUNDSPRITE_CONCRETE;
+	}
+	building {
+		sprite: ss_flag_mc;
+		zextent: 35;
+		}
+}
+item (FEAT_OBJECTS, flag_mc, 031) {
+	property {
+		class:					"WFLG";
+		name:					string(STR_FLAG_MC);
+		climates_available:		ALL_CLIMATES;
+		size:					[1,1];
+		build_cost_multiplier:	param_build_cost;
+		remove_cost_multiplier:	param_remove_cost;
+		introduction_date:		0;
+		end_of_life_date:		0xFFFFFFFF;
+		object_flags:			(param_only_se>0 && param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE,OBJ_FLAG_ONLY_SE) : ((param_only_se>0) ? bitmask(OBJ_FLAG_ONLY_SE) : ((param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE) : 0));
+		height:					17;
+		num_views:				1;
+	}
+	graphics {
+		default:				sl_flag_mc;
+	}
+}
+// flag_mx
+spriteset (ss_flag_mx) {
+	template_flag("gfx/flag_mx")
+}
+spritelayout sl_flag_mx {
+	ground {
+		sprite: GROUNDSPRITE_CONCRETE;
+	}
+	building {
+		sprite: ss_flag_mx;
+		zextent: 35;
+		}
+}
+item (FEAT_OBJECTS, flag_mx, 032) {
+	property {
+		class:					"WFLG";
+		name:					string(STR_FLAG_MX);
+		climates_available:		ALL_CLIMATES;
+		size:					[1,1];
+		build_cost_multiplier:	param_build_cost;
+		remove_cost_multiplier:	param_remove_cost;
+		introduction_date:		0;
+		end_of_life_date:		0xFFFFFFFF;
+		object_flags:			(param_only_se>0 && param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE,OBJ_FLAG_ONLY_SE) : ((param_only_se>0) ? bitmask(OBJ_FLAG_ONLY_SE) : ((param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE) : 0));
+		height:					17;
+		num_views:				1;
+	}
+	graphics {
+		default:				sl_flag_mx;
+	}
+}
+// flag_nl
+spriteset (ss_flag_nl) {
+	template_flag("gfx/flag_nl")
+}
+spritelayout sl_flag_nl {
+	ground {
+		sprite: GROUNDSPRITE_CONCRETE;
+	}
+	building {
+		sprite: ss_flag_nl;
+		zextent: 35;
+		}
+}
+item (FEAT_OBJECTS, flag_nl, 033) {
+	property {
+		class:					"WFLG";
+		name:					string(STR_FLAG_NL);
+		climates_available:		ALL_CLIMATES;
+		size:					[1,1];
+		build_cost_multiplier:	param_build_cost;
+		remove_cost_multiplier:	param_remove_cost;
+		introduction_date:		0;
+		end_of_life_date:		0xFFFFFFFF;
+		object_flags:			(param_only_se>0 && param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE,OBJ_FLAG_ONLY_SE) : ((param_only_se>0) ? bitmask(OBJ_FLAG_ONLY_SE) : ((param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE) : 0));
+		height:					17;
+		num_views:				1;
+	}
+	graphics {
+		default:				sl_flag_nl;
+	}
+}
+// flag_no
+spriteset (ss_flag_no) {
+	template_flag("gfx/flag_no")
+}
+spritelayout sl_flag_no {
+	ground {
+		sprite: GROUNDSPRITE_CONCRETE;
+	}
+	building {
+		sprite: ss_flag_no;
+		zextent: 35;
+		}
+}
+item (FEAT_OBJECTS, flag_no, 034) {
+	property {
+		class:					"WFLG";
+		name:					string(STR_FLAG_NO);
+		climates_available:		ALL_CLIMATES;
+		size:					[1,1];
+		build_cost_multiplier:	param_build_cost;
+		remove_cost_multiplier:	param_remove_cost;
+		introduction_date:		0;
+		end_of_life_date:		0xFFFFFFFF;
+		object_flags:			(param_only_se>0 && param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE,OBJ_FLAG_ONLY_SE) : ((param_only_se>0) ? bitmask(OBJ_FLAG_ONLY_SE) : ((param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE) : 0));
+		height:					17;
+		num_views:				1;
+	}
+	graphics {
+		default:				sl_flag_no;
+	}
+}
+// flag_pe
+spriteset (ss_flag_pe) {
+	template_flag("gfx/flag_pe")
+}
+spritelayout sl_flag_pe {
+	ground {
+		sprite: GROUNDSPRITE_CONCRETE;
+	}
+	building {
+		sprite: ss_flag_pe;
+		zextent: 35;
+		}
+}
+item (FEAT_OBJECTS, flag_pe, 035) {
+	property {
+		class:					"WFLG";
+		name:					string(STR_FLAG_PE);
+		climates_available:		ALL_CLIMATES;
+		size:					[1,1];
+		build_cost_multiplier:	param_build_cost;
+		remove_cost_multiplier:	param_remove_cost;
+		introduction_date:		0;
+		end_of_life_date:		0xFFFFFFFF;
+		object_flags:			(param_only_se>0 && param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE,OBJ_FLAG_ONLY_SE) : ((param_only_se>0) ? bitmask(OBJ_FLAG_ONLY_SE) : ((param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE) : 0));
+		height:					17;
+		num_views:				1;
+	}
+	graphics {
+		default:				sl_flag_pe;
+	}
+}
+// flag_pl
+spriteset (ss_flag_pl) {
+	template_flag("gfx/flag_pl")
+}
+spritelayout sl_flag_pl {
+	ground {
+		sprite: GROUNDSPRITE_CONCRETE;
+	}
+	building {
+		sprite: ss_flag_pl;
+		zextent: 35;
+		}
+}
+item (FEAT_OBJECTS, flag_pl, 036) {
+	property {
+		class:					"WFLG";
+		name:					string(STR_FLAG_PL);
+		climates_available:		ALL_CLIMATES;
+		size:					[1,1];
+		build_cost_multiplier:	param_build_cost;
+		remove_cost_multiplier:	param_remove_cost;
+		introduction_date:		0;
+		end_of_life_date:		0xFFFFFFFF;
+		object_flags:			(param_only_se>0 && param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE,OBJ_FLAG_ONLY_SE) : ((param_only_se>0) ? bitmask(OBJ_FLAG_ONLY_SE) : ((param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE) : 0));
+		height:					17;
+		num_views:				1;
+	}
+	graphics {
+		default:				sl_flag_pl;
+	}
+}
+// flag_pt
+spriteset (ss_flag_pt) {
+	template_flag("gfx/flag_pt")
+}
+spritelayout sl_flag_pt {
+	ground {
+		sprite: GROUNDSPRITE_CONCRETE;
+	}
+	building {
+		sprite: ss_flag_pt;
+		zextent: 35;
+		}
+}
+item (FEAT_OBJECTS, flag_pt, 037) {
+	property {
+		class:					"WFLG";
+		name:					string(STR_FLAG_PT);
+		climates_available:		ALL_CLIMATES;
+		size:					[1,1];
+		build_cost_multiplier:	param_build_cost;
+		remove_cost_multiplier:	param_remove_cost;
+		introduction_date:		0;
+		end_of_life_date:		0xFFFFFFFF;
+		object_flags:			(param_only_se>0 && param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE,OBJ_FLAG_ONLY_SE) : ((param_only_se>0) ? bitmask(OBJ_FLAG_ONLY_SE) : ((param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE) : 0));
+		height:					17;
+		num_views:				1;
+	}
+	graphics {
+		default:				sl_flag_pt;
+	}
+}
+// flag_ro
+spriteset (ss_flag_ro) {
+	template_flag("gfx/flag_ro")
+}
+spritelayout sl_flag_ro {
+	ground {
+		sprite: GROUNDSPRITE_CONCRETE;
+	}
+	building {
+		sprite: ss_flag_ro;
+		zextent: 35;
+		}
+}
+item (FEAT_OBJECTS, flag_ro, 038) {
+	property {
+		class:					"WFLG";
+		name:					string(STR_FLAG_RO);
+		climates_available:		ALL_CLIMATES;
+		size:					[1,1];
+		build_cost_multiplier:	param_build_cost;
+		remove_cost_multiplier:	param_remove_cost;
+		introduction_date:		0;
+		end_of_life_date:		0xFFFFFFFF;
+		object_flags:			(param_only_se>0 && param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE,OBJ_FLAG_ONLY_SE) : ((param_only_se>0) ? bitmask(OBJ_FLAG_ONLY_SE) : ((param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE) : 0));
+		height:					17;
+		num_views:				1;
+	}
+	graphics {
+		default:				sl_flag_ro;
+	}
+}
+// flag_ru
+spriteset (ss_flag_ru) {
+	template_flag("gfx/flag_ru")
+}
+spritelayout sl_flag_ru {
+	ground {
+		sprite: GROUNDSPRITE_CONCRETE;
+	}
+	building {
+		sprite: ss_flag_ru;
+		zextent: 35;
+		}
+}
+item (FEAT_OBJECTS, flag_ru, 039) {
+	property {
+		class:					"WFLG";
+		name:					string(STR_FLAG_RU);
+		climates_available:		ALL_CLIMATES;
+		size:					[1,1];
+		build_cost_multiplier:	param_build_cost;
+		remove_cost_multiplier:	param_remove_cost;
+		introduction_date:		0;
+		end_of_life_date:		0xFFFFFFFF;
+		object_flags:			(param_only_se>0 && param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE,OBJ_FLAG_ONLY_SE) : ((param_only_se>0) ? bitmask(OBJ_FLAG_ONLY_SE) : ((param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE) : 0));
+		height:					17;
+		num_views:				1;
+	}
+	graphics {
+		default:				sl_flag_ru;
+	}
+}
+// flag_se
+spriteset (ss_flag_se) {
+	template_flag("gfx/flag_se")
+}
+spritelayout sl_flag_se {
+	ground {
+		sprite: GROUNDSPRITE_CONCRETE;
+	}
+	building {
+		sprite: ss_flag_se;
+		zextent: 35;
+		}
+}
+item (FEAT_OBJECTS, flag_se, 040) {
+	property {
+		class:					"WFLG";
+		name:					string(STR_FLAG_SE);
+		climates_available:		ALL_CLIMATES;
+		size:					[1,1];
+		build_cost_multiplier:	param_build_cost;
+		remove_cost_multiplier:	param_remove_cost;
+		introduction_date:		0;
+		end_of_life_date:		0xFFFFFFFF;
+		object_flags:			(param_only_se>0 && param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE,OBJ_FLAG_ONLY_SE) : ((param_only_se>0) ? bitmask(OBJ_FLAG_ONLY_SE) : ((param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE) : 0));
+		height:					17;
+		num_views:				1;
+	}
+	graphics {
+		default:				sl_flag_se;
+	}
+}
+// flag_si
+spriteset (ss_flag_si) {
+	template_flag("gfx/flag_si")
+}
+spritelayout sl_flag_si {
+	ground {
+		sprite: GROUNDSPRITE_CONCRETE;
+	}
+	building {
+		sprite: ss_flag_si;
+		zextent: 35;
+		}
+}
+item (FEAT_OBJECTS, flag_si, 041) {
+	property {
+		class:					"WFLG";
+		name:					string(STR_FLAG_SI);
+		climates_available:		ALL_CLIMATES;
+		size:					[1,1];
+		build_cost_multiplier:	param_build_cost;
+		remove_cost_multiplier:	param_remove_cost;
+		introduction_date:		0;
+		end_of_life_date:		0xFFFFFFFF;
+		object_flags:			(param_only_se>0 && param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE,OBJ_FLAG_ONLY_SE) : ((param_only_se>0) ? bitmask(OBJ_FLAG_ONLY_SE) : ((param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE) : 0));
+		height:					17;
+		num_views:				1;
+	}
+	graphics {
+		default:				sl_flag_si;
+	}
+}
+// flag_sk
+spriteset (ss_flag_sk) {
+	template_flag("gfx/flag_sk")
+}
+spritelayout sl_flag_sk {
+	ground {
+		sprite: GROUNDSPRITE_CONCRETE;
+	}
+	building {
+		sprite: ss_flag_sk;
+		zextent: 35;
+		}
+}
+item (FEAT_OBJECTS, flag_sk, 042) {
+	property {
+		class:					"WFLG";
+		name:					string(STR_FLAG_SK);
+		climates_available:		ALL_CLIMATES;
+		size:					[1,1];
+		build_cost_multiplier:	param_build_cost;
+		remove_cost_multiplier:	param_remove_cost;
+		introduction_date:		0;
+		end_of_life_date:		0xFFFFFFFF;
+		object_flags:			(param_only_se>0 && param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE,OBJ_FLAG_ONLY_SE) : ((param_only_se>0) ? bitmask(OBJ_FLAG_ONLY_SE) : ((param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE) : 0));
+		height:					17;
+		num_views:				1;
+	}
+	graphics {
+		default:				sl_flag_sk;
+	}
+}
+// flag_um
+spriteset (ss_flag_um) {
+	template_flag("gfx/flag_um")
+}
+spritelayout sl_flag_um {
+	ground {
+		sprite: GROUNDSPRITE_CONCRETE;
+	}
+	building {
+		sprite: ss_flag_um;
+		zextent: 35;
+		}
+}
+item (FEAT_OBJECTS, flag_um, 043) {
+	property {
+		class:					"WFLG";
+		name:					string(STR_FLAG_UM);
+		climates_available:		ALL_CLIMATES;
+		size:					[1,1];
+		build_cost_multiplier:	param_build_cost;
+		remove_cost_multiplier:	param_remove_cost;
+		introduction_date:		0;
+		end_of_life_date:		0xFFFFFFFF;
+		object_flags:			(param_only_se>0 && param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE,OBJ_FLAG_ONLY_SE) : ((param_only_se>0) ? bitmask(OBJ_FLAG_ONLY_SE) : ((param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE) : 0));
+		height:					17;
+		num_views:				1;
+	}
+	graphics {
+		default:				sl_flag_um;
+	}
+}
+// flag_us
+spriteset (ss_flag_us) {
+	template_flag("gfx/flag_us")
+}
+spritelayout sl_flag_us {
+	ground {
+		sprite: GROUNDSPRITE_CONCRETE;
+	}
+	building {
+		sprite: ss_flag_us;
+		zextent: 35;
+		}
+}
+item (FEAT_OBJECTS, flag_us, 044) {
+	property {
+		class:					"WFLG";
+		name:					string(STR_FLAG_US);
+		climates_available:		ALL_CLIMATES;
+		size:					[1,1];
+		build_cost_multiplier:	param_build_cost;
+		remove_cost_multiplier:	param_remove_cost;
+		introduction_date:		0;
+		end_of_life_date:		0xFFFFFFFF;
+		object_flags:			(param_only_se>0 && param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE,OBJ_FLAG_ONLY_SE) : ((param_only_se>0) ? bitmask(OBJ_FLAG_ONLY_SE) : ((param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE) : 0));
+		height:					17;
+		num_views:				1;
+	}
+	graphics {
+		default:				sl_flag_us;
+	}
+}
+// flag_vn
+spriteset (ss_flag_vn) {
+	template_flag("gfx/flag_vn")
+}
+spritelayout sl_flag_vn {
+	ground {
+		sprite: GROUNDSPRITE_CONCRETE;
+	}
+	building {
+		sprite: ss_flag_vn;
+		zextent: 35;
+		}
+}
+item (FEAT_OBJECTS, flag_vn, 045) {
+	property {
+		class:					"WFLG";
+		name:					string(STR_FLAG_VN);
+		climates_available:		ALL_CLIMATES;
+		size:					[1,1];
+		build_cost_multiplier:	param_build_cost;
+		remove_cost_multiplier:	param_remove_cost;
+		introduction_date:		0;
+		end_of_life_date:		0xFFFFFFFF;
+		object_flags:			(param_only_se>0 && param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE,OBJ_FLAG_ONLY_SE) : ((param_only_se>0) ? bitmask(OBJ_FLAG_ONLY_SE) : ((param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE) : 0));
+		height:					17;
+		num_views:				1;
+	}
+	graphics {
+		default:				sl_flag_vn;
+	}
+}
+// flag_za
+spriteset (ss_flag_za) {
+	template_flag("gfx/flag_za")
+}
+spritelayout sl_flag_za {
+	ground {
+		sprite: GROUNDSPRITE_CONCRETE;
+	}
+	building {
+		sprite: ss_flag_za;
+		zextent: 35;
+		}
+}
+item (FEAT_OBJECTS, flag_za, 046) {
+	property {
+		class:					"WFLG";
+		name:					string(STR_FLAG_ZA);
+		climates_available:		ALL_CLIMATES;
+		size:					[1,1];
+		build_cost_multiplier:	param_build_cost;
+		remove_cost_multiplier:	param_remove_cost;
+		introduction_date:		0;
+		end_of_life_date:		0xFFFFFFFF;
+		object_flags:			(param_only_se>0 && param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE,OBJ_FLAG_ONLY_SE) : ((param_only_se>0) ? bitmask(OBJ_FLAG_ONLY_SE) : ((param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE) : 0));
+		height:					17;
+		num_views:				1;
+	}
+	graphics {
+		default:				sl_flag_za;
+	}
+}

@@ -1,0 +1,271 @@
+##grflangid 0x01
+# This is the English language file
+
+# GRF name and description definitions
+STR_GRF_NAME        		:{NAME} (v {VERSION})
+STR_GRF_DESCRIPTION 		:A large number of flags from around the world{}{COPYRIGHT}:{} drawings: LaChupacabra, Flogeza/Hans Kruzer, yazalo{}collected: LaChupacabra, yazalo{}coding: yazalo{}License: GPL v3
+STR_GRF_URL					:{URL}
+
+# Parameters
+STR_ONLY_SE					:Only Scenario Editor
+STR_ONLY_SE_DESC 			:Enabling this feature makes objects only accessible from the Scenario Editor.
+STR_IRREMOVABLE				:Irremovable objects
+STR_IRREMOVABLE_DESC		:Allows to enable irremovability for objects.
+STR_BUILD_COST				:Build cost
+STR_BUILD_COST_DESC			:Allows to change build cost multiplier for objects from this set.
+STR_REMOVE_COST				:Remove cost
+STR_REMOVE_COST_DESC		:Allows to change remove cost multiplier for objects from this set.
+
+# Category name
+STR_WORLD_FLAGS				:World Flags
+
+# Object names
+STR_FLAG_AD					:Flag of Andorra
+STR_FLAG_AE					:Flag of United Arab Emirates
+STR_FLAG_AF					:Flag of Afghanistan
+STR_FLAG_AG					:Flag of Antigua and Barbuda
+STR_FLAG_AI					:Flag of Anguilla
+STR_FLAG_AL					:Flag of Albania
+STR_FLAG_AM					:Flag of Armenia
+STR_FLAG_AO					:Flag of Angola
+STR_FLAG_AQ					:Flag of Antarctica
+STR_FLAG_AR					:Flag of Argentina
+STR_FLAG_AS					:Flag of American Samoa
+STR_FLAG_AT					:Flag of Austria
+STR_FLAG_AU					:Flag of Australia
+STR_FLAG_AW					:Flag of Aruba
+STR_FLAG_AX					:Flag of Åland Islands
+STR_FLAG_AZ					:Flag of Azerbaijan
+STR_FLAG_BA					:Flag of Bosnia and Herzegovina
+STR_FLAG_BB					:Flag of Barbados
+STR_FLAG_BD					:Flag of Bangladesh
+STR_FLAG_BE					:Flag of Belgium
+STR_FLAG_BF					:Flag of Burkina Faso
+STR_FLAG_BG					:Flag of Bulgaria
+STR_FLAG_BH					:Flag of Bahrain
+STR_FLAG_BI					:Flag of Burundi
+STR_FLAG_BJ					:Flag of Benin
+STR_FLAG_BL					:Flag of Saint Barthélemy
+STR_FLAG_BM					:Flag of Bermuda
+STR_FLAG_BN					:Flag of Brunei Darussalam
+STR_FLAG_BO					:Flag of Bolivia, Plurinational State of
+STR_FLAG_BQ					:Flag of Bonaire, Sint Eustatius and Saba
+STR_FLAG_BR					:Flag of Brazil
+STR_FLAG_BS					:Flag of Bahamas
+STR_FLAG_BT					:Flag of Bhutan
+STR_FLAG_BV					:Flag of Bouvet Island
+STR_FLAG_BW					:Flag of Botswana
+STR_FLAG_BY					:Flag of Belarus
+STR_FLAG_BZ					:Flag of Belize
+STR_FLAG_CA					:Flag of Canada
+STR_FLAG_CC					:Flag of Cocos (Keeling) Islands
+STR_FLAG_CD					:Flag of Congo, the Democratic Republic of the
+STR_FLAG_CF					:Flag of Central African Republic
+STR_FLAG_CG					:Flag of Congo
+STR_FLAG_CH					:Flag of Switzerland
+STR_FLAG_CI					:Flag of Côte d’Ivoire
+STR_FLAG_CK					:Flag of Cook Islands
+STR_FLAG_CL					:Flag of Chile
+STR_FLAG_CM					:Flag of Cameroon
+STR_FLAG_CN					:Flag of China
+STR_FLAG_CO					:Flag of Colombia
+STR_FLAG_CR					:Flag of Costa Rica
+STR_FLAG_CU					:Flag of Cuba
+STR_FLAG_CV					:Flag of Cape Verde
+STR_FLAG_CW					:Flag of Curaçao
+STR_FLAG_CX					:Flag of Christmas Island
+STR_FLAG_CY					:Flag of Cyprus
+STR_FLAG_CZ					:Flag of Czechia
+STR_FLAG_DE					:Flag of Germany
+STR_FLAG_DJ					:Flag of Djibouti
+STR_FLAG_DK					:Flag of Denmark
+STR_FLAG_DM					:Flag of Dominica
+STR_FLAG_DO					:Flag of Dominican Republic
+STR_FLAG_DZ					:Flag of Algeria
+STR_FLAG_EC					:Flag of Ecuador
+STR_FLAG_EE					:Flag of Estonia
+STR_FLAG_EG					:Flag of Egypt
+STR_FLAG_EH					:Flag of Western Sahara
+STR_FLAG_ER					:Flag of Eritrea
+STR_FLAG_ES					:Flag of Spain
+STR_FLAG_ET					:Flag of Ethiopia
+STR_FLAG_FI					:Flag of Finland
+STR_FLAG_FJ					:Flag of Fiji
+STR_FLAG_FK					:Flag of Falkland Islands (Malvinas)
+STR_FLAG_FM					:Flag of Micronesia, Federated States of
+STR_FLAG_FO					:Flag of Faroe Islands
+STR_FLAG_FR					:Flag of France
+STR_FLAG_GA					:Flag of Gabon
+STR_FLAG_GB					:Flag of United Kingdom
+STR_FLAG_GD					:Flag of Grenada
+STR_FLAG_GE					:Flag of Georgia
+STR_FLAG_GF					:Flag of French Guiana
+STR_FLAG_GG					:Flag of Guernsey
+STR_FLAG_GH					:Flag of Ghana
+STR_FLAG_GI					:Flag of Gibraltar
+STR_FLAG_GL					:Flag of Greenland
+STR_FLAG_GM					:Flag of Gambia
+STR_FLAG_GN					:Flag of Guinea
+STR_FLAG_GP					:Flag of Guadeloupe
+STR_FLAG_GQ					:Flag of Equatorial Guinea
+STR_FLAG_GR					:Flag of Greece
+STR_FLAG_GS					:Flag of South Georgia and the South Sandwich Islands
+STR_FLAG_GT					:Flag of Guatemala
+STR_FLAG_GU					:Flag of Guam
+STR_FLAG_GW					:Flag of Guinea-Bissau
+STR_FLAG_GY					:Flag of Guyana
+STR_FLAG_HK					:Flag of Hong Kong
+STR_FLAG_HM					:Flag of Heard Island and McDonald Islands
+STR_FLAG_HN					:Flag of Honduras
+STR_FLAG_HR					:Flag of Croatia
+STR_FLAG_HT					:Flag of Haiti
+STR_FLAG_HU					:Flag of Hungary
+STR_FLAG_ID					:Flag of Indonesia
+STR_FLAG_IE					:Flag of Ireland
+STR_FLAG_IL					:Flag of Israel
+STR_FLAG_IM					:Flag of Isle of Man
+STR_FLAG_IN					:Flag of India
+STR_FLAG_IO					:Flag of British Indian Ocean Territory
+STR_FLAG_IQ					:Flag of Iraq
+STR_FLAG_IR					:Flag of Iran, Islamic Republic of
+STR_FLAG_IS					:Flag of Iceland
+STR_FLAG_IT					:Flag of Italy
+STR_FLAG_JE					:Flag of Jersey
+STR_FLAG_JM					:Flag of Jamaica
+STR_FLAG_JO					:Flag of Jordan
+STR_FLAG_JP					:Flag of Japan
+STR_FLAG_KE					:Flag of Kenya
+STR_FLAG_KG					:Flag of Kyrgyzstan
+STR_FLAG_KH					:Flag of Cambodia
+STR_FLAG_KI					:Flag of Kiribati
+STR_FLAG_KM					:Flag of Comoros
+STR_FLAG_KN					:Flag of Saint Kitts and Nevis
+STR_FLAG_KP					:Flag of Korea, Democratic People’s Republic of
+STR_FLAG_KR					:Flag of Korea, Republic of
+STR_FLAG_KW					:Flag of Kuwait
+STR_FLAG_KY					:Flag of Cayman Islands
+STR_FLAG_KZ					:Flag of Kazakhstan
+STR_FLAG_LA					:Flag of Lao People’s Democratic Republic
+STR_FLAG_LB					:Flag of Lebanon
+STR_FLAG_LC					:Flag of Saint Lucia
+STR_FLAG_LI					:Flag of Liechtenstein
+STR_FLAG_LK					:Flag of Sri Lanka
+STR_FLAG_LR					:Flag of Liberia
+STR_FLAG_LS					:Flag of Lesotho
+STR_FLAG_LT					:Flag of Lithuania
+STR_FLAG_LU					:Flag of Luxembourg
+STR_FLAG_LV					:Flag of Latvia
+STR_FLAG_LY					:Flag of Libyan Arab Jamahiriya
+STR_FLAG_MA					:Flag of Morocco
+STR_FLAG_MC					:Flag of Monaco
+STR_FLAG_MD					:Flag of Moldova, Republic of
+STR_FLAG_ME					:Flag of Montenegro
+STR_FLAG_MF					:Flag of Saint Martin (French part)
+STR_FLAG_MG					:Flag of Madagascar
+STR_FLAG_MH					:Flag of Marshall Islands
+STR_FLAG_MK					:Flag of North Macedonia
+STR_FLAG_ML					:Flag of Mali
+STR_FLAG_MM					:Flag of Myanmar
+STR_FLAG_MN					:Flag of Mongolia
+STR_FLAG_MO					:Flag of Macao
+STR_FLAG_MP					:Flag of Northern Mariana Islands
+STR_FLAG_MQ					:Flag of Martinique
+STR_FLAG_MR					:Flag of Mauritania
+STR_FLAG_MS					:Flag of Montserrat
+STR_FLAG_MT					:Flag of Malta
+STR_FLAG_MU					:Flag of Mauritius
+STR_FLAG_MV					:Flag of Maldives
+STR_FLAG_MW					:Flag of Malawi
+STR_FLAG_MX					:Flag of Mexico
+STR_FLAG_MY					:Flag of Malaysia
+STR_FLAG_MZ					:Flag of Mozambique
+STR_FLAG_NA					:Flag of Namibia
+STR_FLAG_NC					:Flag of New Caledonia
+STR_FLAG_NE					:Flag of Niger
+STR_FLAG_NF					:Flag of Norfolk Island
+STR_FLAG_NG					:Flag of Nigeria
+STR_FLAG_NI					:Flag of Nicaragua
+STR_FLAG_NL					:Flag of Netherlands
+STR_FLAG_NO					:Flag of Norway
+STR_FLAG_NP					:Flag of Nepal
+STR_FLAG_NR					:Flag of Nauru
+STR_FLAG_NU					:Flag of Niue
+STR_FLAG_NZ					:Flag of New Zealand
+STR_FLAG_OM					:Flag of Oman
+STR_FLAG_PA					:Flag of Panama
+STR_FLAG_PE					:Flag of Peru
+STR_FLAG_PF					:Flag of French Polynesia
+STR_FLAG_PG					:Flag of Papua New Guinea
+STR_FLAG_PH					:Flag of Philippines
+STR_FLAG_PK					:Flag of Pakistan
+STR_FLAG_PL					:Flag of Poland
+STR_FLAG_PM					:Flag of Saint Pierre and Miquelon
+STR_FLAG_PN					:Flag of Pitcairn
+STR_FLAG_PR					:Flag of Puerto Rico
+STR_FLAG_PS					:Flag of Palestinian Territory, Occupied
+STR_FLAG_PT					:Flag of Portugal
+STR_FLAG_PW					:Flag of Palau
+STR_FLAG_PY					:Flag of Paraguay
+STR_FLAG_QA					:Flag of Qatar
+STR_FLAG_RE					:Flag of Réunion
+STR_FLAG_RO					:Flag of Romania
+STR_FLAG_RS					:Flag of Serbia
+STR_FLAG_RU					:Flag of Russian Federation
+STR_FLAG_RW					:Flag of Rwanda
+STR_FLAG_SA					:Flag of Saudi Arabia
+STR_FLAG_SB					:Flag of Solomon Islands
+STR_FLAG_SC					:Flag of Seychelles
+STR_FLAG_SD					:Flag of Sudan
+STR_FLAG_SE					:Flag of Sweden
+STR_FLAG_SG					:Flag of Singapore
+STR_FLAG_SH					:Flag of Saint Helena, Ascension and Tristan da Cunha
+STR_FLAG_SI					:Flag of Slovenia
+STR_FLAG_SJ					:Flag of Svalbard and Jan Mayen
+STR_FLAG_SK					:Flag of Slovakia
+STR_FLAG_SL					:Flag of Sierra Leone
+STR_FLAG_SM					:Flag of San Marino
+STR_FLAG_SN					:Flag of Senegal
+STR_FLAG_SO					:Flag of Somalia
+STR_FLAG_SR					:Flag of Suriname
+STR_FLAG_SS					:Flag of South Sudan
+STR_FLAG_ST					:Flag of Sao Tome and Principe
+STR_FLAG_SV					:Flag of El Salvador
+STR_FLAG_SX					:Flag of Sint Maarten (Dutch part)
+STR_FLAG_SY					:Flag of Syrian Arab Republic
+STR_FLAG_SZ					:Flag of Eswatini
+STR_FLAG_TC					:Flag of Turks and Caicos Islands
+STR_FLAG_TD					:Flag of Chad
+STR_FLAG_TF					:Flag of French Southern Territories
+STR_FLAG_TG					:Flag of Togo
+STR_FLAG_TH					:Flag of Thailand
+STR_FLAG_TJ					:Flag of Tajikistan
+STR_FLAG_TK					:Flag of Tokelau
+STR_FLAG_TL					:Flag of Timor-Leste
+STR_FLAG_TM					:Flag of Turkmenistan
+STR_FLAG_TN					:Flag of Tunisia
+STR_FLAG_TO					:Flag of Tonga
+STR_FLAG_TR					:Flag of Turkey
+STR_FLAG_TT					:Flag of Trinidad and Tobago
+STR_FLAG_TV					:Flag of Tuvalu
+STR_FLAG_TW					:Flag of Taiwan, Province of China
+STR_FLAG_TZ					:Flag of Tanzania, United Republic of
+STR_FLAG_UA					:Flag of Ukraine
+STR_FLAG_UG					:Flag of Uganda
+STR_FLAG_UM					:Flag of United States Minor Outlying Islands
+STR_FLAG_US					:Flag of United States
+STR_FLAG_UY					:Flag of Uruguay
+STR_FLAG_UZ					:Flag of Uzbekistan
+STR_FLAG_VA					:Flag of Holy See (Vatican City State)
+STR_FLAG_VC					:Flag of Saint Vincent and the Grenadines
+STR_FLAG_VE					:Flag of Venezuela, Bolivarian Republic of
+STR_FLAG_VG					:Flag of Virgin Islands, British
+STR_FLAG_VI					:Flag of Virgin Islands, U.S.
+STR_FLAG_VN					:Flag of Viet Nam
+STR_FLAG_VU					:Flag of Vanuatu
+STR_FLAG_WF					:Flag of Wallis and Futuna
+STR_FLAG_WS					:Flag of Samoa
+STR_FLAG_YE					:Flag of Yemen
+STR_FLAG_YT					:Flag of Mayotte
+STR_FLAG_ZA					:Flag of South Africa
+STR_FLAG_ZM					:Flag of Zambia
+STR_FLAG_ZW					:Flag of Zimbabwe

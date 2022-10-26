@@ -1,0 +1,271 @@
+##grflangid 0x30
+# This is the Polish language file
+
+# GRF name and description definitions
+STR_GRF_NAME        		:Flagi Świata ({NAME} v{VERSION})
+STR_GRF_DESCRIPTION 		:Rozmaite flagi z całego świata{}{COPYRIGHT}:{} rysunki: LaChupacabra, Flogeza/Hans Kruzer, yazalo{} zebrane przez: LaChupacabra, yazalo{} kod: yazalo{}Licencja: GPL v3
+STR_GRF_URL					:{URL}
+
+# Parameters
+STR_ONLY_SE					:Tylko edytor scenariuszy
+STR_ONLY_SE_DESC			:Włączenie tej funkcji powoduje, że obiekty dostępne są tylko z poziomu edytora scenariuszy.
+STR_IRREMOVABLE				:Nieusuwalne obiekty
+STR_IRREMOVABLE_DESC		:Pozwala włączyć nieusuwalność dla obiektów z tego setu.
+STR_BUILD_COST				:Koszt budowy
+STR_BUILD_COST_DESC			:Pozwala zmienić mnożnik kosztu budowy dla obiektów z tego setu.
+STR_REMOVE_COST				:Koszt wyburzenia
+STR_REMOVE_COST_DESC		:Pozwala zmienić mnożnik kosztu wyburzenia dla obiektów z tego setu.
+
+# Category name
+STR_WORLD_FLAGS				:Flagi Świata
+
+# Object names
+STR_FLAG_AD					:Flaga Andory
+STR_FLAG_AE					:Flaga Zjednoczonych Emiratów Arabskich
+STR_FLAG_AF					:Flaga Afganistanu
+STR_FLAG_AG					:Flaga Antigui i Barbudy
+STR_FLAG_AI					:Flaga Anguilli
+STR_FLAG_AL					:Flaga Albanii
+STR_FLAG_AM					:Flaga Armenii
+STR_FLAG_AO					:Flaga Angoli
+STR_FLAG_AQ					:Flaga Antarktyki
+STR_FLAG_AR					:Flaga Argentyny
+STR_FLAG_AS					:Flaga Samoa Amerykańskiego
+STR_FLAG_AT					:Flaga Austrii
+STR_FLAG_AU					:Flaga Australii
+STR_FLAG_AW					:Flaga Aruby
+STR_FLAG_AX					:Flaga Wysp Alandzkich
+STR_FLAG_AZ					:Flaga Azerbejdżanu
+STR_FLAG_BA					:Flaga Bośni i Hercegowiny
+STR_FLAG_BB					:Flaga Barbadosu
+STR_FLAG_BD					:Flaga Bangladeszu
+STR_FLAG_BE					:Flaga Belgii
+STR_FLAG_BF					:Flaga Burkiny Faso
+STR_FLAG_BG					:Flaga Bułgarii
+STR_FLAG_BH					:Flaga Bahrajnu
+STR_FLAG_BI					:Flaga Burundi
+STR_FLAG_BJ					:Flaga Beninu
+STR_FLAG_BL					:Flaga Saint-Barthélemy
+STR_FLAG_BM					:Flaga Bermudów
+STR_FLAG_BN					:Flaga Brunei
+STR_FLAG_BO					:Flaga Boliwii
+STR_FLAG_BQ					:Flaga Bonaire, Sint Eustatius i Saby
+STR_FLAG_BR					:Flaga Brazylii
+STR_FLAG_BS					:Flaga Bahamów
+STR_FLAG_BT					:Flaga Bhutanu
+STR_FLAG_BV					:Flaga Wyspy Bouveta
+STR_FLAG_BW					:Flaga Botswany
+STR_FLAG_BY					:Flaga Białorusi
+STR_FLAG_BZ					:Flaga Belize
+STR_FLAG_CA					:Flaga Kanady
+STR_FLAG_CC					:Flaga Wysp Kokosowych
+STR_FLAG_CD					:Flaga Demokratycznej Republiki Konga
+STR_FLAG_CF					:Flaga Republiki Środkowoafrykańskiej
+STR_FLAG_CG					:Flaga Konga
+STR_FLAG_CH					:Flaga Szwajcarii
+STR_FLAG_CI					:Flaga Wybrzeża Kości Słoniowej
+STR_FLAG_CK					:Flaga Wysp Cooka
+STR_FLAG_CL					:Flaga Chile
+STR_FLAG_CM					:Flaga Kamerunu
+STR_FLAG_CN					:Flaga Chińskiej Republiki Ludowej
+STR_FLAG_CO					:Flaga Kolumbii
+STR_FLAG_CR					:Flaga Kostaryki
+STR_FLAG_CU					:Flaga Kuby
+STR_FLAG_CV					:Flaga Republiki Zielonego Przylądka
+STR_FLAG_CW					:Flaga Curaçao
+STR_FLAG_CX					:Flaga Wyspy Bożego Narodzenia
+STR_FLAG_CY					:Flaga Cypru
+STR_FLAG_CZ					:Flaga Czech
+STR_FLAG_DE					:Flaga Niemiec
+STR_FLAG_DJ					:Flaga Dżibuti
+STR_FLAG_DK					:Flaga Danii
+STR_FLAG_DM					:Flaga Dominiki
+STR_FLAG_DO					:Flaga Dominikany
+STR_FLAG_DZ					:Flaga Algierii
+STR_FLAG_EC					:Flaga Ekwadoru
+STR_FLAG_EE					:Flaga Estonii
+STR_FLAG_EG					:Flaga Egiptu
+STR_FLAG_EH					:Flaga Sahary Zachodniej
+STR_FLAG_ER					:Flaga Erytrei
+STR_FLAG_ES					:Flaga Hiszpanii
+STR_FLAG_ET					:Flaga Etiopii
+STR_FLAG_FI					:Flaga Finlandii
+STR_FLAG_FJ					:Flaga Fidżi
+STR_FLAG_FK					:Flaga Falklandów
+STR_FLAG_FM					:Flaga Mikronezji
+STR_FLAG_FO					:Flaga Wysp Owczych
+STR_FLAG_FR					:Flaga Francji
+STR_FLAG_GA					:Flaga Gabonu
+STR_FLAG_GB					:Flaga Wielkiej Brytanii
+STR_FLAG_GD					:Flaga Grenady
+STR_FLAG_GE					:Flaga Gruzji
+STR_FLAG_GF					:Flaga Gujany Francuskiej
+STR_FLAG_GG					:Flaga Guernsey
+STR_FLAG_GH					:Flaga Ghany
+STR_FLAG_GI					:Flaga Gibraltaru
+STR_FLAG_GL					:Flaga Grenlandii
+STR_FLAG_GM					:Flaga Gambii
+STR_FLAG_GN					:Flaga Gwinei
+STR_FLAG_GP					:Flaga Gwadelupy
+STR_FLAG_GQ					:Flaga Gwinei Równikowej
+STR_FLAG_GR					:Flaga Grecji
+STR_FLAG_GS					:Flaga Georgii Południowej i Sandwichu Południowego
+STR_FLAG_GT					:Flaga Gwatemali
+STR_FLAG_GU					:Flaga Guamu
+STR_FLAG_GW					:Flaga Gwinei Bissau
+STR_FLAG_GY					:Flaga Gujany
+STR_FLAG_HK					:Flaga Hongkongu
+STR_FLAG_HM					:Flaga Wysp Heard i McDonalda
+STR_FLAG_HN					:Flaga Hondurasu
+STR_FLAG_HR					:Flaga Chorwacji
+STR_FLAG_HT					:Flaga Haiti
+STR_FLAG_HU					:Flaga Węgier
+STR_FLAG_ID					:Flaga Indonezji
+STR_FLAG_IE					:Flaga Irlandii
+STR_FLAG_IL					:Flaga Izraela
+STR_FLAG_IM					:Flaga Wyspy Man
+STR_FLAG_IN					:Flaga Indii
+STR_FLAG_IO					:Flaga Brytyjskiego Terytorium Oceanu Indyjskiego
+STR_FLAG_IQ					:Flaga Iraku
+STR_FLAG_IR					:Flaga Iranu
+STR_FLAG_IS					:Flaga Islandii
+STR_FLAG_IT					:Flaga Włoch
+STR_FLAG_JE					:Flaga Jersey
+STR_FLAG_JM					:Flaga Jamajki
+STR_FLAG_JO					:Flaga Jordanii
+STR_FLAG_JP					:Flaga Japonii
+STR_FLAG_KE					:Flaga Kenii
+STR_FLAG_KG					:Flaga Kirgistanu
+STR_FLAG_KH					:Flaga Kambodży
+STR_FLAG_KI					:Flaga Kiribati
+STR_FLAG_KM					:Flaga Komorów
+STR_FLAG_KN					:Flaga Saint Kitts i Nevis
+STR_FLAG_KP					:Flaga Korei Północnej
+STR_FLAG_KR					:Flaga Korei Południowej
+STR_FLAG_KW					:Flaga Kuwejtu
+STR_FLAG_KY					:Flaga Kajmanów
+STR_FLAG_KZ					:Flaga Kazachstanu
+STR_FLAG_LA					:Flaga Laosu
+STR_FLAG_LB					:Flaga Libanu
+STR_FLAG_LC					:Flaga Saint Lucia
+STR_FLAG_LI					:Flaga Liechtensteinu
+STR_FLAG_LK					:Flaga Sri Lanki
+STR_FLAG_LR					:Flaga Liberii
+STR_FLAG_LS					:Flaga Lesotho
+STR_FLAG_LT					:Flaga Litwy
+STR_FLAG_LU					:Flaga Luksemburga
+STR_FLAG_LV					:Flaga Łotwy
+STR_FLAG_LY					:Flaga Libii
+STR_FLAG_MA					:Flaga Maroka
+STR_FLAG_MC					:Flaga Monako
+STR_FLAG_MD					:Flaga Mołdawii
+STR_FLAG_ME					:Flaga Czarnogóry
+STR_FLAG_MF					:Flaga Saint-Martin
+STR_FLAG_MG					:Flaga Madagaskaru
+STR_FLAG_MH					:Flaga Wysp Marshalla
+STR_FLAG_MK					:Flaga Macedonii Północnej
+STR_FLAG_ML					:Flaga Mali
+STR_FLAG_MM					:Flaga Birmy
+STR_FLAG_MN					:Flaga Mongolii
+STR_FLAG_MO					:Flaga Makau
+STR_FLAG_MP					:Flaga Marianów Północnych
+STR_FLAG_MQ					:Flaga Martyniki
+STR_FLAG_MR					:Flaga Mauretanii
+STR_FLAG_MS					:Flaga Montserratu
+STR_FLAG_MT					:Flaga Malty
+STR_FLAG_MU					:Flaga Mauritiusa
+STR_FLAG_MV					:Flaga Malediwów
+STR_FLAG_MW					:Flaga Malawi
+STR_FLAG_MX					:Flaga Meksyku
+STR_FLAG_MY					:Flaga Malezji
+STR_FLAG_MZ					:Flaga Mozambiku
+STR_FLAG_NA					:Flaga Namibii
+STR_FLAG_NC					:Flaga Nowej Kaledonii
+STR_FLAG_NE					:Flaga Nigru
+STR_FLAG_NF					:Flaga Norfolku
+STR_FLAG_NG					:Flaga Nigerii
+STR_FLAG_NI					:Flaga Nikaragui
+STR_FLAG_NL					:Flaga Holandii
+STR_FLAG_NO					:Flaga Norwegii
+STR_FLAG_NP					:Flaga Nepalu
+STR_FLAG_NR					:Flaga Nauru
+STR_FLAG_NU					:Flaga Niue
+STR_FLAG_NZ					:Flaga Nowej Zelandii
+STR_FLAG_OM					:Flaga Omanu
+STR_FLAG_PA					:Flaga Panamy
+STR_FLAG_PE					:Flaga Peru
+STR_FLAG_PF					:Flaga Polinezji Francuskiej
+STR_FLAG_PG					:Flaga Papui-Nowej Gwinei
+STR_FLAG_PH					:Flaga Filipin
+STR_FLAG_PK					:Flaga Pakistanu
+STR_FLAG_PL					:Flaga Polski
+STR_FLAG_PM					:Flaga Saint-Pierre i Miquelon
+STR_FLAG_PN					:Flaga Pitcairn
+STR_FLAG_PR					:Flaga Portoryka
+STR_FLAG_PS					:Flaga Palestyny
+STR_FLAG_PT					:Flaga Portugalii
+STR_FLAG_PW					:Flaga Palau
+STR_FLAG_PY					:Flaga Paragwaju
+STR_FLAG_QA					:Flaga Kataru
+STR_FLAG_RE					:Flaga Reunionu
+STR_FLAG_RO					:Flaga Rumunii
+STR_FLAG_RS					:Flaga Serbii
+STR_FLAG_RU					:Flaga Rosji
+STR_FLAG_RW					:Flaga Rwandy
+STR_FLAG_SA					:Flaga Arabii Saudyjskiej
+STR_FLAG_SB					:Flaga Wysp Salomona
+STR_FLAG_SC					:Flaga Seszeli
+STR_FLAG_SD					:Flaga Sudanu
+STR_FLAG_SE					:Flaga Szwecji
+STR_FLAG_SG					:Flaga Singapuru
+STR_FLAG_SH					:Flaga Wyspy Świętej Heleny, Wyspy Wniebowstąpienia i Tristan da Cunha
+STR_FLAG_SI					:Flaga Słowenii
+STR_FLAG_SJ					:Flaga Svalbardu i Jan Mayen
+STR_FLAG_SK					:Flaga Słowacji
+STR_FLAG_SL					:Flaga Sierra Leone
+STR_FLAG_SM					:Flaga San Marino
+STR_FLAG_SN					:Flaga Senegalu
+STR_FLAG_SO					:Flaga Somalii
+STR_FLAG_SR					:Flaga Surinamu
+STR_FLAG_SS					:Flaga Sudanu Południowego
+STR_FLAG_ST					:Flaga Wysp Świętego Tomasza i Książęcej
+STR_FLAG_SV					:Flaga Salwadoru
+STR_FLAG_SX					:Flaga Sint Maarten
+STR_FLAG_SY					:Flaga Syrii
+STR_FLAG_SZ					:Flaga Eswatini
+STR_FLAG_TC					:Flaga Turks i Caicos
+STR_FLAG_TD					:Flaga Czadu
+STR_FLAG_TF					:Flaga Francuskich Terytoriów Południowych i Antarktycznych
+STR_FLAG_TG					:Flaga Togo
+STR_FLAG_TH					:Flaga Tajlandii
+STR_FLAG_TJ					:Flaga Tadżykistanu
+STR_FLAG_TK					:Flaga Tokelau
+STR_FLAG_TL					:Flaga Timoru Wschodniego
+STR_FLAG_TM					:Flaga Turkmenistanu
+STR_FLAG_TN					:Flaga Tunezji
+STR_FLAG_TO					:Flaga Tonga
+STR_FLAG_TR					:Flaga Turcji
+STR_FLAG_TT					:Flaga Trynidadu i Tobago
+STR_FLAG_TV					:Flaga Tuvalu
+STR_FLAG_TW					:Flaga Republiki Chińskiej
+STR_FLAG_TZ					:Flaga Tanzanii
+STR_FLAG_UA					:Flaga Ukrainy
+STR_FLAG_UG					:Flaga Ugandy
+STR_FLAG_UM					:Flaga Dalekich Wysp Mniejszych Stanów Zjednoczonych
+STR_FLAG_US					:Flaga Stanów Zjednoczonych
+STR_FLAG_UY					:Flaga Urugwaju
+STR_FLAG_UZ					:Flaga Uzbekistanu
+STR_FLAG_VA					:Flaga Watykanu
+STR_FLAG_VC					:Flaga Saint Vincent i Grenadyn
+STR_FLAG_VE					:Flaga Wenezueli
+STR_FLAG_VG					:Flaga Brytyjskich Wysp Dziewiczych
+STR_FLAG_VI					:Flaga Wysp Dziewiczych Stanów Zjednoczonych
+STR_FLAG_VN					:Flaga Wietnamu
+STR_FLAG_VU					:Flaga Vanuatu
+STR_FLAG_WF					:Flaga Wallis i Futuny
+STR_FLAG_WS					:Flaga Samoa
+STR_FLAG_YE					:Flaga Jemenu
+STR_FLAG_YT					:Flaga Majotty
+STR_FLAG_ZA					:Flaga RPA
+STR_FLAG_ZM					:Flaga Zambii
+STR_FLAG_ZW					:Flaga Zimbabwe 
