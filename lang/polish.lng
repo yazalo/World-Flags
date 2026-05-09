@@ -89,6 +89,7 @@ STR_FLAG_EH					:Flaga Sahary Zachodniej
 STR_FLAG_ER					:Flaga Erytrei
 STR_FLAG_ES					:Flaga Hiszpanii
 STR_FLAG_ET					:Flaga Etiopii
+STR_FLAG_EU					:Flaga Unii Europejskiej
 STR_FLAG_FI					:Flaga Finlandii
 STR_FLAG_FJ					:Flaga Fidżi
 STR_FLAG_FK					:Flaga Falklandów
@@ -252,6 +253,7 @@ STR_FLAG_TZ					:Flaga Tanzanii
 STR_FLAG_UA					:Flaga Ukrainy
 STR_FLAG_UG					:Flaga Ugandy
 STR_FLAG_UM					:Flaga Dalekich Wysp Mniejszych Stanów Zjednoczonych
+STR_FLAG_UN					:Flaga ONZ
 STR_FLAG_US					:Flaga Stanów Zjednoczonych
 STR_FLAG_UY					:Flaga Urugwaju
 STR_FLAG_UZ					:Flaga Uzbekistanu

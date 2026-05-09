@@ -1,9 +1,9 @@
 grf {
-	grfid: "yz\02\00";		//797A0200
+	grfid: "yz\02\01";		//797A0201
 	name: string(STR_GRF_NAME);
 	desc: string(STR_GRF_DESCRIPTION);
-	version: 0;
-	min_compatible_version: 0;
+	version: 3;
+	min_compatible_version: 3;
 	url: string(STR_GRF_URL);
 	param {
 		param_only_se {
@@ -43,7 +43,6 @@ template template_flag (filename){		//universal flag template
 	[2, 2, 64, 81, -31, -50, filename+".png"]
 }
 // OBJECTS
-// semi-automatically generated code:
 // flag_ar
 spriteset (ss_flag_ar) {
 	template_flag("gfx/flag_ar")
@@ -57,10 +56,10 @@ spritelayout sl_flag_ar {
 		zextent: 35;
 		}
 }
-item (FEAT_OBJECTS, flag_ar, 000) {
+item (FEAT_OBJECTS, flag_ar, 0) {
 	property {
 		class:					"WFLG";
-classname:				string(STR_WORLD_FLAGS);
+		classname:				string(STR_WORLD_FLAGS);
 		name:					string(STR_FLAG_AR);
 		climates_available:		ALL_CLIMATES;
 		size:					[1,1];
@@ -89,9 +88,10 @@ spritelayout sl_flag_at {
 		zextent: 35;
 		}
 }
-item (FEAT_OBJECTS, flag_at, 001) {
+item (FEAT_OBJECTS, flag_at, 1) {
 	property {
 		class:					"WFLG";
+		classname:				string(STR_WORLD_FLAGS);
 		name:					string(STR_FLAG_AT);
 		climates_available:		ALL_CLIMATES;
 		size:					[1,1];
@@ -120,9 +120,10 @@ spritelayout sl_flag_au {
 		zextent: 35;
 		}
 }
-item (FEAT_OBJECTS, flag_au, 002) {
+item (FEAT_OBJECTS, flag_au, 2) {
 	property {
 		class:					"WFLG";
+		classname:				string(STR_WORLD_FLAGS);
 		name:					string(STR_FLAG_AU);
 		climates_available:		ALL_CLIMATES;
 		size:					[1,1];
@@ -151,9 +152,10 @@ spritelayout sl_flag_be {
 		zextent: 35;
 		}
 }
-item (FEAT_OBJECTS, flag_be, 003) {
+item (FEAT_OBJECTS, flag_be, 3) {
 	property {
 		class:					"WFLG";
+		classname:				string(STR_WORLD_FLAGS);
 		name:					string(STR_FLAG_BE);
 		climates_available:		ALL_CLIMATES;
 		size:					[1,1];
@@ -182,9 +184,10 @@ spritelayout sl_flag_bg {
 		zextent: 35;
 		}
 }
-item (FEAT_OBJECTS, flag_bg, 004) {
+item (FEAT_OBJECTS, flag_bg, 4) {
 	property {
 		class:					"WFLG";
+		classname:				string(STR_WORLD_FLAGS);
 		name:					string(STR_FLAG_BG);
 		climates_available:		ALL_CLIMATES;
 		size:					[1,1];
@@ -213,9 +216,10 @@ spritelayout sl_flag_br {
 		zextent: 35;
 		}
 }
-item (FEAT_OBJECTS, flag_br, 005) {
+item (FEAT_OBJECTS, flag_br, 5) {
 	property {
 		class:					"WFLG";
+		classname:				string(STR_WORLD_FLAGS);
 		name:					string(STR_FLAG_BR);
 		climates_available:		ALL_CLIMATES;
 		size:					[1,1];
@@ -244,9 +248,10 @@ spritelayout sl_flag_ca {
 		zextent: 35;
 		}
 }
-item (FEAT_OBJECTS, flag_ca, 006) {
+item (FEAT_OBJECTS, flag_ca, 6) {
 	property {
 		class:					"WFLG";
+		classname:				string(STR_WORLD_FLAGS);
 		name:					string(STR_FLAG_CA);
 		climates_available:		ALL_CLIMATES;
 		size:					[1,1];
@@ -275,9 +280,10 @@ spritelayout sl_flag_ch {
 		zextent: 35;
 		}
 }
-item (FEAT_OBJECTS, flag_ch, 007) {
+item (FEAT_OBJECTS, flag_ch, 7) {
 	property {
 		class:					"WFLG";
+		classname:				string(STR_WORLD_FLAGS);
 		name:					string(STR_FLAG_CH);
 		climates_available:		ALL_CLIMATES;
 		size:					[1,1];
@@ -306,9 +312,10 @@ spritelayout sl_flag_cl {
 		zextent: 35;
 		}
 }
-item (FEAT_OBJECTS, flag_cl, 008) {
+item (FEAT_OBJECTS, flag_cl, 8) {
 	property {
 		class:					"WFLG";
+		classname:				string(STR_WORLD_FLAGS);
 		name:					string(STR_FLAG_CL);
 		climates_available:		ALL_CLIMATES;
 		size:					[1,1];
@@ -337,9 +344,10 @@ spritelayout sl_flag_cn {
 		zextent: 35;
 		}
 }
-item (FEAT_OBJECTS, flag_cn, 09) {
+item (FEAT_OBJECTS, flag_cn, 9) {
 	property {
 		class:					"WFLG";
+		classname:				string(STR_WORLD_FLAGS);
 		name:					string(STR_FLAG_CN);
 		climates_available:		ALL_CLIMATES;
 		size:					[1,1];
@@ -355,6 +363,38 @@ item (FEAT_OBJECTS, flag_cn, 09) {
 		default:				sl_flag_cn;
 	}
 }
+// flag_cu
+spriteset (ss_flag_cu) {
+	template_flag("gfx/flag_cu")
+}
+spritelayout sl_flag_cu {
+	ground {
+		sprite: GROUNDSPRITE_CONCRETE;
+	}
+	building {
+		sprite: ss_flag_cu;
+		zextent: 35;
+		}
+}
+item (FEAT_OBJECTS, flag_cu, 10) {
+	property {
+		class:					"WFLG";
+		classname:				string(STR_WORLD_FLAGS);
+		name:					string(STR_FLAG_CU);
+		climates_available:		ALL_CLIMATES;
+		size:					[1,1];
+		build_cost_multiplier:	param_build_cost;
+		remove_cost_multiplier:	param_remove_cost;
+		introduction_date:		0;
+		end_of_life_date:		0xFFFFFFFF;
+		object_flags:			(param_only_se>0 && param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE,OBJ_FLAG_ONLY_SE) : ((param_only_se>0) ? bitmask(OBJ_FLAG_ONLY_SE) : ((param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE) : 0));
+		height:					17;
+		num_views:				1;
+	}
+	graphics {
+		default:				sl_flag_cu;
+	}
+}
 // flag_cz
 spriteset (ss_flag_cz) {
 	template_flag("gfx/flag_cz")
@@ -368,9 +408,10 @@ spritelayout sl_flag_cz {
 		zextent: 35;
 		}
 }
-item (FEAT_OBJECTS, flag_cz, 010) {
+item (FEAT_OBJECTS, flag_cz, 11) {
 	property {
 		class:					"WFLG";
+		classname:				string(STR_WORLD_FLAGS);
 		name:					string(STR_FLAG_CZ);
 		climates_available:		ALL_CLIMATES;
 		size:					[1,1];
@@ -399,9 +440,10 @@ spritelayout sl_flag_de {
 		zextent: 35;
 		}
 }
-item (FEAT_OBJECTS, flag_de, 011) {
+item (FEAT_OBJECTS, flag_de, 12) {
 	property {
 		class:					"WFLG";
+		classname:				string(STR_WORLD_FLAGS);
 		name:					string(STR_FLAG_DE);
 		climates_available:		ALL_CLIMATES;
 		size:					[1,1];
@@ -430,9 +472,10 @@ spritelayout sl_flag_dk {
 		zextent: 35;
 		}
 }
-item (FEAT_OBJECTS, flag_dk, 012) {
+item (FEAT_OBJECTS, flag_dk, 13) {
 	property {
 		class:					"WFLG";
+		classname:				string(STR_WORLD_FLAGS);
 		name:					string(STR_FLAG_DK);
 		climates_available:		ALL_CLIMATES;
 		size:					[1,1];
@@ -461,9 +504,10 @@ spritelayout sl_flag_ee {
 		zextent: 35;
 		}
 }
-item (FEAT_OBJECTS, flag_ee, 013) {
+item (FEAT_OBJECTS, flag_ee, 14) {
 	property {
 		class:					"WFLG";
+		classname:				string(STR_WORLD_FLAGS);
 		name:					string(STR_FLAG_EE);
 		climates_available:		ALL_CLIMATES;
 		size:					[1,1];
@@ -492,9 +536,10 @@ spritelayout sl_flag_eg {
 		zextent: 35;
 		}
 }
-item (FEAT_OBJECTS, flag_eg, 014) {
+item (FEAT_OBJECTS, flag_eg, 15) {
 	property {
 		class:					"WFLG";
+		classname:				string(STR_WORLD_FLAGS);
 		name:					string(STR_FLAG_EG);
 		climates_available:		ALL_CLIMATES;
 		size:					[1,1];
@@ -523,9 +568,10 @@ spritelayout sl_flag_es {
 		zextent: 35;
 		}
 }
-item (FEAT_OBJECTS, flag_es, 015) {
+item (FEAT_OBJECTS, flag_es, 16) {
 	property {
 		class:					"WFLG";
+		classname:				string(STR_WORLD_FLAGS);
 		name:					string(STR_FLAG_ES);
 		climates_available:		ALL_CLIMATES;
 		size:					[1,1];
@@ -541,6 +587,38 @@ item (FEAT_OBJECTS, flag_es, 015) {
 		default:				sl_flag_es;
 	}
 }
+// flag_eu
+spriteset (ss_flag_eu) {
+	template_flag("gfx/flag_eu")
+}
+spritelayout sl_flag_eu {
+	ground {
+		sprite: GROUNDSPRITE_CONCRETE;
+	}
+	building {
+		sprite: ss_flag_eu;
+		zextent: 35;
+		}
+}
+item (FEAT_OBJECTS, flag_eu, 17) {
+	property {
+		class:					"WFLG";
+		classname:				string(STR_WORLD_FLAGS);
+		name:					string(STR_FLAG_EU);
+		climates_available:		ALL_CLIMATES;
+		size:					[1,1];
+		build_cost_multiplier:	param_build_cost;
+		remove_cost_multiplier:	param_remove_cost;
+		introduction_date:		0;
+		end_of_life_date:		0xFFFFFFFF;
+		object_flags:			(param_only_se>0 && param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE,OBJ_FLAG_ONLY_SE) : ((param_only_se>0) ? bitmask(OBJ_FLAG_ONLY_SE) : ((param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE) : 0));
+		height:					17;
+		num_views:				1;
+	}
+	graphics {
+		default:				sl_flag_eu;
+	}
+}
 // flag_fi
 spriteset (ss_flag_fi) {
 	template_flag("gfx/flag_fi")
@@ -554,9 +632,10 @@ spritelayout sl_flag_fi {
 		zextent: 35;
 		}
 }
-item (FEAT_OBJECTS, flag_fi, 016) {
+item (FEAT_OBJECTS, flag_fi, 18) {
 	property {
 		class:					"WFLG";
+		classname:				string(STR_WORLD_FLAGS);
 		name:					string(STR_FLAG_FI);
 		climates_available:		ALL_CLIMATES;
 		size:					[1,1];
@@ -585,9 +664,10 @@ spritelayout sl_flag_fr {
 		zextent: 35;
 		}
 }
-item (FEAT_OBJECTS, flag_fr, 017) {
+item (FEAT_OBJECTS, flag_fr, 19) {
 	property {
 		class:					"WFLG";
+		classname:				string(STR_WORLD_FLAGS);
 		name:					string(STR_FLAG_FR);
 		climates_available:		ALL_CLIMATES;
 		size:					[1,1];
@@ -616,9 +696,10 @@ spritelayout sl_flag_gb {
 		zextent: 35;
 		}
 }
-item (FEAT_OBJECTS, flag_gb, 018) {
+item (FEAT_OBJECTS, flag_gb, 20) {
 	property {
 		class:					"WFLG";
+		classname:				string(STR_WORLD_FLAGS);
 		name:					string(STR_FLAG_GB);
 		climates_available:		ALL_CLIMATES;
 		size:					[1,1];
@@ -634,6 +715,38 @@ item (FEAT_OBJECTS, flag_gb, 018) {
 		default:				sl_flag_gb;
 	}
 }
+// flag_gr
+spriteset (ss_flag_gr) {
+	template_flag("gfx/flag_gr")
+}
+spritelayout sl_flag_gr {
+	ground {
+		sprite: GROUNDSPRITE_CONCRETE;
+	}
+	building {
+		sprite: ss_flag_gr;
+		zextent: 35;
+		}
+}
+item (FEAT_OBJECTS, flag_gr, 21) {
+	property {
+		class:					"WFLG";
+		classname:				string(STR_WORLD_FLAGS);
+		name:					string(STR_FLAG_GR);
+		climates_available:		ALL_CLIMATES;
+		size:					[1,1];
+		build_cost_multiplier:	param_build_cost;
+		remove_cost_multiplier:	param_remove_cost;
+		introduction_date:		0;
+		end_of_life_date:		0xFFFFFFFF;
+		object_flags:			(param_only_se>0 && param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE,OBJ_FLAG_ONLY_SE) : ((param_only_se>0) ? bitmask(OBJ_FLAG_ONLY_SE) : ((param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE) : 0));
+		height:					17;
+		num_views:				1;
+	}
+	graphics {
+		default:				sl_flag_gr;
+	}
+}
 // flag_hr
 spriteset (ss_flag_hr) {
 	template_flag("gfx/flag_hr")
@@ -647,9 +760,10 @@ spritelayout sl_flag_hr {
 		zextent: 35;
 		}
 }
-item (FEAT_OBJECTS, flag_hr, 019) {
+item (FEAT_OBJECTS, flag_hr, 22) {
 	property {
 		class:					"WFLG";
+		classname:				string(STR_WORLD_FLAGS);
 		name:					string(STR_FLAG_HR);
 		climates_available:		ALL_CLIMATES;
 		size:					[1,1];
@@ -678,9 +792,10 @@ spritelayout sl_flag_hu {
 		zextent: 35;
 		}
 }
-item (FEAT_OBJECTS, flag_hu, 020) {
+item (FEAT_OBJECTS, flag_hu, 23) {
 	property {
 		class:					"WFLG";
+		classname:				string(STR_WORLD_FLAGS);
 		name:					string(STR_FLAG_HU);
 		climates_available:		ALL_CLIMATES;
 		size:					[1,1];
@@ -709,9 +824,10 @@ spritelayout sl_flag_id {
 		zextent: 35;
 		}
 }
-item (FEAT_OBJECTS, flag_id, 021) {
+item (FEAT_OBJECTS, flag_id, 24) {
 	property {
 		class:					"WFLG";
+		classname:				string(STR_WORLD_FLAGS);
 		name:					string(STR_FLAG_ID);
 		climates_available:		ALL_CLIMATES;
 		size:					[1,1];
@@ -740,9 +856,10 @@ spritelayout sl_flag_ie {
 		zextent: 35;
 		}
 }
-item (FEAT_OBJECTS, flag_ie, 022) {
+item (FEAT_OBJECTS, flag_ie, 25) {
 	property {
 		class:					"WFLG";
+		classname:				string(STR_WORLD_FLAGS);
 		name:					string(STR_FLAG_IE);
 		climates_available:		ALL_CLIMATES;
 		size:					[1,1];
@@ -758,6 +875,102 @@ item (FEAT_OBJECTS, flag_ie, 022) {
 		default:				sl_flag_ie;
 	}
 }
+// flag_il
+spriteset (ss_flag_il) {
+	template_flag("gfx/flag_il")
+}
+spritelayout sl_flag_il {
+	ground {
+		sprite: GROUNDSPRITE_CONCRETE;
+	}
+	building {
+		sprite: ss_flag_il;
+		zextent: 35;
+		}
+}
+item (FEAT_OBJECTS, flag_il, 26) {
+	property {
+		class:					"WFLG";
+		classname:				string(STR_WORLD_FLAGS);
+		name:					string(STR_FLAG_IL);
+		climates_available:		ALL_CLIMATES;
+		size:					[1,1];
+		build_cost_multiplier:	param_build_cost;
+		remove_cost_multiplier:	param_remove_cost;
+		introduction_date:		0;
+		end_of_life_date:		0xFFFFFFFF;
+		object_flags:			(param_only_se>0 && param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE,OBJ_FLAG_ONLY_SE) : ((param_only_se>0) ? bitmask(OBJ_FLAG_ONLY_SE) : ((param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE) : 0));
+		height:					17;
+		num_views:				1;
+	}
+	graphics {
+		default:				sl_flag_il;
+	}
+}
+// flag_in
+spriteset (ss_flag_in) {
+	template_flag("gfx/flag_in")
+}
+spritelayout sl_flag_in {
+	ground {
+		sprite: GROUNDSPRITE_CONCRETE;
+	}
+	building {
+		sprite: ss_flag_in;
+		zextent: 35;
+		}
+}
+item (FEAT_OBJECTS, flag_in, 27) {
+	property {
+		class:					"WFLG";
+		classname:				string(STR_WORLD_FLAGS);
+		name:					string(STR_FLAG_IN);
+		climates_available:		ALL_CLIMATES;
+		size:					[1,1];
+		build_cost_multiplier:	param_build_cost;
+		remove_cost_multiplier:	param_remove_cost;
+		introduction_date:		0;
+		end_of_life_date:		0xFFFFFFFF;
+		object_flags:			(param_only_se>0 && param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE,OBJ_FLAG_ONLY_SE) : ((param_only_se>0) ? bitmask(OBJ_FLAG_ONLY_SE) : ((param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE) : 0));
+		height:					17;
+		num_views:				1;
+	}
+	graphics {
+		default:				sl_flag_in;
+	}
+}
+// flag_ir
+spriteset (ss_flag_ir) {
+	template_flag("gfx/flag_ir")
+}
+spritelayout sl_flag_ir {
+	ground {
+		sprite: GROUNDSPRITE_CONCRETE;
+	}
+	building {
+		sprite: ss_flag_ir;
+		zextent: 35;
+		}
+}
+item (FEAT_OBJECTS, flag_ir, 28) {
+	property {
+		class:					"WFLG";
+		classname:				string(STR_WORLD_FLAGS);
+		name:					string(STR_FLAG_IR);
+		climates_available:		ALL_CLIMATES;
+		size:					[1,1];
+		build_cost_multiplier:	param_build_cost;
+		remove_cost_multiplier:	param_remove_cost;
+		introduction_date:		0;
+		end_of_life_date:		0xFFFFFFFF;
+		object_flags:			(param_only_se>0 && param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE,OBJ_FLAG_ONLY_SE) : ((param_only_se>0) ? bitmask(OBJ_FLAG_ONLY_SE) : ((param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE) : 0));
+		height:					17;
+		num_views:				1;
+	}
+	graphics {
+		default:				sl_flag_ir;
+	}
+}
 // flag_is
 spriteset (ss_flag_is) {
 	template_flag("gfx/flag_is")
@@ -771,9 +984,10 @@ spritelayout sl_flag_is {
 		zextent: 35;
 		}
 }
-item (FEAT_OBJECTS, flag_is, 023) {
+item (FEAT_OBJECTS, flag_is, 29) {
 	property {
 		class:					"WFLG";
+		classname:				string(STR_WORLD_FLAGS);
 		name:					string(STR_FLAG_IS);
 		climates_available:		ALL_CLIMATES;
 		size:					[1,1];
@@ -802,9 +1016,10 @@ spritelayout sl_flag_it {
 		zextent: 35;
 		}
 }
-item (FEAT_OBJECTS, flag_it, 024) {
+item (FEAT_OBJECTS, flag_it, 30) {
 	property {
 		class:					"WFLG";
+		classname:				string(STR_WORLD_FLAGS);
 		name:					string(STR_FLAG_IT);
 		climates_available:		ALL_CLIMATES;
 		size:					[1,1];
@@ -833,9 +1048,10 @@ spritelayout sl_flag_jm {
 		zextent: 35;
 		}
 }
-item (FEAT_OBJECTS, flag_jm, 025) {
+item (FEAT_OBJECTS, flag_jm, 31) {
 	property {
 		class:					"WFLG";
+		classname:				string(STR_WORLD_FLAGS);
 		name:					string(STR_FLAG_JM);
 		climates_available:		ALL_CLIMATES;
 		size:					[1,1];
@@ -864,9 +1080,10 @@ spritelayout sl_flag_jp {
 		zextent: 35;
 		}
 }
-item (FEAT_OBJECTS, flag_jp, 026) {
+item (FEAT_OBJECTS, flag_jp, 32) {
 	property {
 		class:					"WFLG";
+		classname:				string(STR_WORLD_FLAGS);
 		name:					string(STR_FLAG_JP);
 		climates_available:		ALL_CLIMATES;
 		size:					[1,1];
@@ -895,9 +1112,10 @@ spritelayout sl_flag_kr {
 		zextent: 35;
 		}
 }
-item (FEAT_OBJECTS, flag_kr, 027) {
+item (FEAT_OBJECTS, flag_kr, 33) {
 	property {
 		class:					"WFLG";
+		classname:				string(STR_WORLD_FLAGS);
 		name:					string(STR_FLAG_KR);
 		climates_available:		ALL_CLIMATES;
 		size:					[1,1];
@@ -926,9 +1144,10 @@ spritelayout sl_flag_lt {
 		zextent: 35;
 		}
 }
-item (FEAT_OBJECTS, flag_lt, 028) {
+item (FEAT_OBJECTS, flag_lt, 34) {
 	property {
 		class:					"WFLG";
+		classname:				string(STR_WORLD_FLAGS);
 		name:					string(STR_FLAG_LT);
 		climates_available:		ALL_CLIMATES;
 		size:					[1,1];
@@ -957,9 +1176,10 @@ spritelayout sl_flag_lu {
 		zextent: 35;
 		}
 }
-item (FEAT_OBJECTS, flag_lu, 029) {
+item (FEAT_OBJECTS, flag_lu, 35) {
 	property {
 		class:					"WFLG";
+		classname:				string(STR_WORLD_FLAGS);
 		name:					string(STR_FLAG_LU);
 		climates_available:		ALL_CLIMATES;
 		size:					[1,1];
@@ -988,9 +1208,10 @@ spritelayout sl_flag_lv {
 		zextent: 35;
 		}
 }
-item (FEAT_OBJECTS, flag_lv, 030) {
+item (FEAT_OBJECTS, flag_lv, 36) {
 	property {
 		class:					"WFLG";
+		classname:				string(STR_WORLD_FLAGS);
 		name:					string(STR_FLAG_LV);
 		climates_available:		ALL_CLIMATES;
 		size:					[1,1];
@@ -1019,9 +1240,10 @@ spritelayout sl_flag_mc {
 		zextent: 35;
 		}
 }
-item (FEAT_OBJECTS, flag_mc, 031) {
+item (FEAT_OBJECTS, flag_mc, 37) {
 	property {
 		class:					"WFLG";
+		classname:				string(STR_WORLD_FLAGS);
 		name:					string(STR_FLAG_MC);
 		climates_available:		ALL_CLIMATES;
 		size:					[1,1];
@@ -1050,9 +1272,10 @@ spritelayout sl_flag_mx {
 		zextent: 35;
 		}
 }
-item (FEAT_OBJECTS, flag_mx, 032) {
+item (FEAT_OBJECTS, flag_mx, 38) {
 	property {
 		class:					"WFLG";
+		classname:				string(STR_WORLD_FLAGS);
 		name:					string(STR_FLAG_MX);
 		climates_available:		ALL_CLIMATES;
 		size:					[1,1];
@@ -1081,9 +1304,10 @@ spritelayout sl_flag_nl {
 		zextent: 35;
 		}
 }
-item (FEAT_OBJECTS, flag_nl, 033) {
+item (FEAT_OBJECTS, flag_nl, 39) {
 	property {
 		class:					"WFLG";
+		classname:				string(STR_WORLD_FLAGS);
 		name:					string(STR_FLAG_NL);
 		climates_available:		ALL_CLIMATES;
 		size:					[1,1];
@@ -1112,9 +1336,10 @@ spritelayout sl_flag_no {
 		zextent: 35;
 		}
 }
-item (FEAT_OBJECTS, flag_no, 034) {
+item (FEAT_OBJECTS, flag_no, 40) {
 	property {
 		class:					"WFLG";
+		classname:				string(STR_WORLD_FLAGS);
 		name:					string(STR_FLAG_NO);
 		climates_available:		ALL_CLIMATES;
 		size:					[1,1];
@@ -1143,9 +1368,10 @@ spritelayout sl_flag_pe {
 		zextent: 35;
 		}
 }
-item (FEAT_OBJECTS, flag_pe, 035) {
+item (FEAT_OBJECTS, flag_pe, 41) {
 	property {
 		class:					"WFLG";
+		classname:				string(STR_WORLD_FLAGS);
 		name:					string(STR_FLAG_PE);
 		climates_available:		ALL_CLIMATES;
 		size:					[1,1];
@@ -1174,9 +1400,10 @@ spritelayout sl_flag_pl {
 		zextent: 35;
 		}
 }
-item (FEAT_OBJECTS, flag_pl, 036) {
+item (FEAT_OBJECTS, flag_pl, 42) {
 	property {
 		class:					"WFLG";
+		classname:				string(STR_WORLD_FLAGS);
 		name:					string(STR_FLAG_PL);
 		climates_available:		ALL_CLIMATES;
 		size:					[1,1];
@@ -1192,6 +1419,38 @@ item (FEAT_OBJECTS, flag_pl, 036) {
 		default:				sl_flag_pl;
 	}
 }
+// flag_ps
+spriteset (ss_flag_ps) {
+	template_flag("gfx/flag_ps")
+}
+spritelayout sl_flag_ps {
+	ground {
+		sprite: GROUNDSPRITE_CONCRETE;
+	}
+	building {
+		sprite: ss_flag_ps;
+		zextent: 35;
+		}
+}
+item (FEAT_OBJECTS, flag_ps, 43) {
+	property {
+		class:					"WFLG";
+		classname:				string(STR_WORLD_FLAGS);
+		name:					string(STR_FLAG_PS);
+		climates_available:		ALL_CLIMATES;
+		size:					[1,1];
+		build_cost_multiplier:	param_build_cost;
+		remove_cost_multiplier:	param_remove_cost;
+		introduction_date:		0;
+		end_of_life_date:		0xFFFFFFFF;
+		object_flags:			(param_only_se>0 && param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE,OBJ_FLAG_ONLY_SE) : ((param_only_se>0) ? bitmask(OBJ_FLAG_ONLY_SE) : ((param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE) : 0));
+		height:					17;
+		num_views:				1;
+	}
+	graphics {
+		default:				sl_flag_ps;
+	}
+}
 // flag_pt
 spriteset (ss_flag_pt) {
 	template_flag("gfx/flag_pt")
@@ -1205,9 +1464,10 @@ spritelayout sl_flag_pt {
 		zextent: 35;
 		}
 }
-item (FEAT_OBJECTS, flag_pt, 037) {
+item (FEAT_OBJECTS, flag_pt, 44) {
 	property {
 		class:					"WFLG";
+		classname:				string(STR_WORLD_FLAGS);
 		name:					string(STR_FLAG_PT);
 		climates_available:		ALL_CLIMATES;
 		size:					[1,1];
@@ -1236,9 +1496,10 @@ spritelayout sl_flag_ro {
 		zextent: 35;
 		}
 }
-item (FEAT_OBJECTS, flag_ro, 038) {
+item (FEAT_OBJECTS, flag_ro, 45) {
 	property {
 		class:					"WFLG";
+		classname:				string(STR_WORLD_FLAGS);
 		name:					string(STR_FLAG_RO);
 		climates_available:		ALL_CLIMATES;
 		size:					[1,1];
@@ -1267,9 +1528,10 @@ spritelayout sl_flag_ru {
 		zextent: 35;
 		}
 }
-item (FEAT_OBJECTS, flag_ru, 039) {
+item (FEAT_OBJECTS, flag_ru, 46) {
 	property {
 		class:					"WFLG";
+		classname:				string(STR_WORLD_FLAGS);
 		name:					string(STR_FLAG_RU);
 		climates_available:		ALL_CLIMATES;
 		size:					[1,1];
@@ -1298,9 +1560,10 @@ spritelayout sl_flag_se {
 		zextent: 35;
 		}
 }
-item (FEAT_OBJECTS, flag_se, 040) {
+item (FEAT_OBJECTS, flag_se, 47) {
 	property {
 		class:					"WFLG";
+		classname:				string(STR_WORLD_FLAGS);
 		name:					string(STR_FLAG_SE);
 		climates_available:		ALL_CLIMATES;
 		size:					[1,1];
@@ -1329,9 +1592,10 @@ spritelayout sl_flag_si {
 		zextent: 35;
 		}
 }
-item (FEAT_OBJECTS, flag_si, 041) {
+item (FEAT_OBJECTS, flag_si, 48) {
 	property {
 		class:					"WFLG";
+		classname:				string(STR_WORLD_FLAGS);
 		name:					string(STR_FLAG_SI);
 		climates_available:		ALL_CLIMATES;
 		size:					[1,1];
@@ -1360,9 +1624,10 @@ spritelayout sl_flag_sk {
 		zextent: 35;
 		}
 }
-item (FEAT_OBJECTS, flag_sk, 042) {
+item (FEAT_OBJECTS, flag_sk, 49) {
 	property {
 		class:					"WFLG";
+		classname:				string(STR_WORLD_FLAGS);
 		name:					string(STR_FLAG_SK);
 		climates_available:		ALL_CLIMATES;
 		size:					[1,1];
@@ -1378,6 +1643,70 @@ item (FEAT_OBJECTS, flag_sk, 042) {
 		default:				sl_flag_sk;
 	}
 }
+// flag_tr
+spriteset (ss_flag_tr) {
+	template_flag("gfx/flag_tr")
+}
+spritelayout sl_flag_tr {
+	ground {
+		sprite: GROUNDSPRITE_CONCRETE;
+	}
+	building {
+		sprite: ss_flag_tr;
+		zextent: 35;
+		}
+}
+item (FEAT_OBJECTS, flag_tr, 50) {
+	property {
+		class:					"WFLG";
+		classname:				string(STR_WORLD_FLAGS);
+		name:					string(STR_FLAG_TR);
+		climates_available:		ALL_CLIMATES;
+		size:					[1,1];
+		build_cost_multiplier:	param_build_cost;
+		remove_cost_multiplier:	param_remove_cost;
+		introduction_date:		0;
+		end_of_life_date:		0xFFFFFFFF;
+		object_flags:			(param_only_se>0 && param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE,OBJ_FLAG_ONLY_SE) : ((param_only_se>0) ? bitmask(OBJ_FLAG_ONLY_SE) : ((param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE) : 0));
+		height:					17;
+		num_views:				1;
+	}
+	graphics {
+		default:				sl_flag_tr;
+	}
+}
+// flag_ua
+spriteset (ss_flag_ua) {
+	template_flag("gfx/flag_ua")
+}
+spritelayout sl_flag_ua {
+	ground {
+		sprite: GROUNDSPRITE_CONCRETE;
+	}
+	building {
+		sprite: ss_flag_ua;
+		zextent: 35;
+		}
+}
+item (FEAT_OBJECTS, flag_ua, 51) {
+	property {
+		class:					"WFLG";
+		classname:				string(STR_WORLD_FLAGS);
+		name:					string(STR_FLAG_UA);
+		climates_available:		ALL_CLIMATES;
+		size:					[1,1];
+		build_cost_multiplier:	param_build_cost;
+		remove_cost_multiplier:	param_remove_cost;
+		introduction_date:		0;
+		end_of_life_date:		0xFFFFFFFF;
+		object_flags:			(param_only_se>0 && param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE,OBJ_FLAG_ONLY_SE) : ((param_only_se>0) ? bitmask(OBJ_FLAG_ONLY_SE) : ((param_irremovable>0) ? bitmask(OBJ_FLAG_IRREMOVABLE) : 0));
+		height:					17;
+		num_views:				1;
+	}
+	graphics {
+		default:				sl_flag_ua;
+	}
+}
 // flag_um
 spriteset (ss_flag_um) {
 	template_flag("gfx/flag_um")
@@ -1391,9 +1720,10 @@ spritelayout sl_flag_um {
 		zextent: 35;
 		}
 }
-item (FEAT_OBJECTS, flag_um, 043) {
+item (FEAT_OBJECTS, flag_um, 52) {
 	property {
 		class:					"WFLG";
+		classname:				string(STR_WORLD_FLAGS);
 		name:					string(STR_FLAG_UM);
 		climates_available:		ALL_CLIMATES;
 		size:					[1,1];
@@ -1422,9 +1752,10 @@ spritelayout sl_flag_us {
 		zextent: 35;
 		}
 }
-item (FEAT_OBJECTS, flag_us, 044) {
+item (FEAT_OBJECTS, flag_us, 53) {
 	property {
 		class:					"WFLG";
+		classname:				string(STR_WORLD_FLAGS);
 		name:					string(STR_FLAG_US);
 		climates_available:		ALL_CLIMATES;
 		size:					[1,1];
@@ -1453,9 +1784,10 @@ spritelayout sl_flag_vn {
 		zextent: 35;
 		}
 }
-item (FEAT_OBJECTS, flag_vn, 045) {
+item (FEAT_OBJECTS, flag_vn, 54) {
 	property {
 		class:					"WFLG";
+		classname:				string(STR_WORLD_FLAGS);
 		name:					string(STR_FLAG_VN);
 		climates_available:		ALL_CLIMATES;
 		size:					[1,1];
@@ -1484,9 +1816,10 @@ spritelayout sl_flag_za {
 		zextent: 35;
 		}
 }
-item (FEAT_OBJECTS, flag_za, 046) {
+item (FEAT_OBJECTS, flag_za, 55) {
 	property {
 		class:					"WFLG";
+		classname:				string(STR_WORLD_FLAGS);
 		name:					string(STR_FLAG_ZA);
 		climates_available:		ALL_CLIMATES;
 		size:					[1,1];

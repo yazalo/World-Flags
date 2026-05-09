@@ -89,6 +89,7 @@ STR_FLAG_EH					:Flag of Western Sahara
 STR_FLAG_ER					:Flag of Eritrea
 STR_FLAG_ES					:Flag of Spain
 STR_FLAG_ET					:Flag of Ethiopia
+STR_FLAG_EU					:Flag of European Union
 STR_FLAG_FI					:Flag of Finland
 STR_FLAG_FJ					:Flag of Fiji
 STR_FLAG_FK					:Flag of Falkland Islands (Malvinas)
@@ -252,6 +253,7 @@ STR_FLAG_TZ					:Flag of Tanzania, United Republic of
 STR_FLAG_UA					:Flag of Ukraine
 STR_FLAG_UG					:Flag of Uganda
 STR_FLAG_UM					:Flag of United States Minor Outlying Islands
+STR_FLAG_UN					:Flag of United Nations
 STR_FLAG_US					:Flag of United States
 STR_FLAG_UY					:Flag of Uruguay
 STR_FLAG_UZ					:Flag of Uzbekistan
